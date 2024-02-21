@@ -36,9 +36,7 @@ header{
     background-color: white;
     color:rgb(3, 5, 43)
 }
-.color-w{
-    color: white;
-}
+
 h1{
     font-size: 0.8rem;
     text-align: left;
@@ -52,9 +50,9 @@ h1{
 h2 {
     padding: 5% 3% 5% 3%;
     color: white;
-    /* font-weight: bold; */
     text-align: center;
     font-size: 1.25rem;
+    margin: 0;
 }
 
 /* ------------------------------Aplicacion de propiedades a seccion productos------------------------------------ */
