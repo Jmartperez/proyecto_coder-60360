@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
+    background-color: rgb(3, 5, 43);
 }
 
 /* Mobile Responsive a partir de 350px */
@@ -13,10 +14,15 @@
 /* Background color, imagen y texto de Navbar + H1 */
 
 header{
-    background-color: rgb(3, 5, 43);
+    /* background-color: rgb(3, 5, 43); */
     color:white;
     padding-bottom: 5%;
+    border-bottom: 2px solid white;
 }
+
+.navbar{
+    padding-bottom: 0%;
+}   
 
 .logo{
     max-width: 150px;
@@ -30,9 +36,13 @@ header{
     background-color: white;
     color:rgb(3, 5, 43)
 }
+.color-w{
+    color: white;
+}
 h1{
-    font-size: 1.25rem;
-    text-align: center;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 5%;
 }
 
 /* ...................................................................................................... */
@@ -41,8 +51,8 @@ h1{
 
 h2 {
     padding: 5% 3% 5% 3%;
-    color: rgb(3, 3, 37);
-    font-weight: 700;
+    color: white;
+    /* font-weight: bold; */
     text-align: center;
     font-size: 1.25rem;
 }
@@ -50,38 +60,38 @@ h2 {
 /* ------------------------------Aplicacion de propiedades a seccion productos------------------------------------ */
 
 /* Aplicacion Flexbox a div de seccion Productos a traves de class */
-.art-product {
+/* .art-product {
     display: flex;
     justify-content: space-evenly;
     padding: 0% 3% 0% 3%;
-}
+} */
 
 /* Box modeling a article de la seccion */
-.productos {
+/* .productos {
     width: 500px;
-}
+} */
 
 /* Box modeling a Imagenes de seccion */
-.productos img {
+/* .productos img {
     display: block;
     padding: 5%;
     width: 100%;
-}
+} */
 
 /* Box modeling + Text-align + tamaño fuente + color + eliminacion subrayado a todo "a" de main */
-.productos a {
+/* .productos a {
     display: block;
     text-align: center;
     font-size: 1.25rem;
     color: rgb(3, 5, 43);
     text-decoration: none;
-}
+} */
 
 /* Efecto Hover a "a" de seccion productos */
-.productos a:hover {
+/* .productos a:hover {
     background-color: rgb(3, 5, 43);
     color: white;
-}
+} */
 
 
 /* ----------------------------------------Seccion Sobre Nosostros----------------------------------------------------- */
