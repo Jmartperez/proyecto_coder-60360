@@ -7,14 +7,11 @@
     background-color: rgb(3, 5, 43);
 }
 
-/* Mobile Responsive a partir de 350px */
+/* -----------------------------Mobile Responsive a partir de 350px--------------------- */
 
-/* Propiedades en Header */
-
-/* Background color, imagen y texto de Navbar + H1 */
+/* Propiedades en Header responsive a 350px */
 
 header{
-    /* background-color: rgb(3, 5, 43); */
     color:white;
     padding-bottom: 5%;
     border-bottom: 2px solid white;
@@ -43,9 +40,7 @@ h1{
     padding-left: 5%;
 }
 
-/* ...................................................................................................... */
-
-/* Propiedades generales en Main */
+/* ----------------------Propiedades generales en Main responsive a 350px-----------------*/
 
 h2 {
     padding: 5% 3% 5% 3%;
@@ -54,62 +49,39 @@ h2 {
     font-size: 1.25rem;
     margin: 0;
 }
+.nuestros-prod{
+    padding-bottom: 8%;
+    border-bottom: 2px solid white;
 
-/* ------------------------------Aplicacion de propiedades a seccion productos------------------------------------ */
-
-/* Aplicacion Flexbox a div de seccion Productos a traves de class */
-/* .art-product {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0% 3% 0% 3%;
-} */
-
-/* Box modeling a article de la seccion */
-/* .productos {
-    width: 500px;
-} */
-
-/* Box modeling a Imagenes de seccion */
-/* .productos img {
-    display: block;
-    padding: 5%;
-    width: 100%;
-} */
-
-/* Box modeling + Text-align + tamaño fuente + color + eliminacion subrayado a todo "a" de main */
-/* .productos a {
-    display: block;
-    text-align: center;
-    font-size: 1.25rem;
-    color: rgb(3, 5, 43);
-    text-decoration: none;
-} */
-
-/* Efecto Hover a "a" de seccion productos */
-/* .productos a:hover {
-    background-color: rgb(3, 5, 43);
-    color: white;
-} */
-
-
-/* ----------------------------------------Seccion Sobre Nosostros----------------------------------------------------- */
+}
+/* -----------------------Seccion "Sobre Nosotros" responsive a 350px------------------- */
 
 /* Propiedades a elemento div de seccion sobre nosostros */
 .about div {
     display: flex;
     padding: 0% 3% 0% 3%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.about img{
+    max-width: 100%;
+    height: 100%;
+    align-self: center;
 }
 
 .about p {
     width: 60%;
+    color: white;
+    text-align: center;
 }
-
+.about{
+    border-bottom: 2px solid white;
+}
 /* Modificacion de tamaño de imagen en seccion especifica con class (seccion sobre nosotros) */
-.about img {
+/* .about img {
     width: 40%;
     padding-right: 2rem;
-}
+} */
 
 /* ----------------------------------------Seccion Zonas de envio----------------------------------------------------- */
 .envio h2 {
@@ -288,4 +260,43 @@ footer a {
     justify-content: flex-end;
     padding-right: 5%;
 } */
+
+
+/* ------------------------------Aplicacion de propiedades a seccion productos------------------------------------ */
+
+/* Aplicacion Flexbox a div de seccion Productos a traves de class */
+/* .art-product {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0% 3% 0% 3%;
+} */
+
+/* Box modeling a article de la seccion */
+/* .productos {
+    width: 500px;
+} */
+
+/* Box modeling a Imagenes de seccion */
+/* .productos img {
+    display: block;
+    padding: 5%;
+    width: 100%;
+} */
+
+/* Box modeling + Text-align + tamaño fuente + color + eliminacion subrayado a todo "a" de main */
+/* .productos a {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    color: rgb(3, 5, 43);
+    text-decoration: none;
+} */
+
+/* Efecto Hover a "a" de seccion productos */
+/* .productos a:hover {
+    background-color: rgb(3, 5, 43);
+    color: white;
+} */
+
+
 
