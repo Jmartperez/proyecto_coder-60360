@@ -115,86 +115,82 @@ h2 {
     background-color: rgb(3, 5, 43);
 }
 
-/* ----------------------------------------------Seccion Contacto ----------------------------------------------------- */
+/* -------------------Seccion Contacto ----------------------------------------------------- */
 
 /* Alineacion especial de H2 para seccion "Contacto" */
+.contacto{
+    padding-bottom: 8%;
+    border-bottom: 2px solid white;
+}
 .contacto h2 {
-    text-align: left;
+    text-align: center;
     padding-bottom: 1%;
+}
+.contacto h3{
+    text-align: center;
+    color: white;
+    font-size: 1.20rem;
+    margin: 0;
 }
 
 .contacto p {
+    color: white;
+    text-align: center;
     padding: 1% 3% 1% 3%;
+    margin: 0;
 }
-
-.bloque1 {
-    display: flex;
-    padding: 0% 3% 5% 0%;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.bloque2 {
+.contacto1{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 50%;
-}
-
-.img1 {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    color: rgb(3, 3, 37);
-    padding-left: 5%;
-}
-
-.img2 {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    color: rgb(3, 3, 37);
-    padding-left: 5%;
-}
-
-.img3 {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    color: rgb(3, 3, 37);
-    padding: 1% 0% 1% 7%;
-}
-
-.img3 h3 {
-    text-align: center;
-}
-
-/* Flexbox + Familia fuente + tamaño + color a todo texto de "form"*/
-form {
-    display: flex;
-    flex-flow: wrap column;
     justify-content: center;
-    font-size: 1.5rem;
-    color: rgb(3, 3, 37);
-    width: 50%;
-    padding: 1%;
+    padding: 5%;
 }
-/* Box modeling a div de form */
-form div {
-    padding: 1% 0% 1% 0%;
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 5% 2% 5%;
 }
-/* Box modeling a input */
-form input {
-    width: 100%;
-}
-/* Box modeling a textarea */
-textarea {
-    width: 100%;
-}
-/* Box modeling a boton de submit */
-.boton {
+.what{
     width: 20%;
+}
+.img2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 5% 2% 5%;
+}
+
+.img2 h3{
+    padding-left: 3%;
+}
+
+.img3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2% 5% 2% 5%;
+}
+
+.contacto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+.contacto2 label{
+    color: white;
+    font-size: 1.20rem;
+    padding: 2%;
+}
+input{
+    width: 100%;
+    background-color: white;
+}
+textarea{
+    width: 100%;
+    background-color: white;
+
 }
 
 /* ...................................................................................................... */
