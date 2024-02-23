@@ -41,6 +41,44 @@ h1 {
     padding-left: 5%;
 }
 
+@media (min-width:768px) {
+    header {
+        color: white;
+        padding-bottom: 1%;
+        border-bottom: 2px solid white;
+    }
+
+    .navbar {
+        padding-bottom: 0%;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .font-a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .font-a:hover {
+        background-color: white;
+        color: rgb(3, 5, 43)
+    }
+
+    h1 {
+        font-size: 0.8rem;
+        text-align: left;
+        padding-left: 2%;
+    }
+
+}
+
 /* ----------------------Propiedades generales en Main responsive a 350px-----------------*/
 
 h2 {
@@ -236,10 +274,3 @@ textarea {
 /* ...................................................................................................... */
 
 /* Propiedades en Footer */
-
-
-/* Incluir en desktop */
-/* .collapse{
-    justify-content: flex-end;
-    padding-right: 5%;
-} */
