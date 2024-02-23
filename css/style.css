@@ -41,6 +41,7 @@ h1 {
     padding-left: 5%;
 }
 
+/* ..................Media Query para Header a 768px........ */
 @media (min-width:768px) {
     header {
         color: white;
@@ -79,7 +80,7 @@ h1 {
 
 }
 
-/* ----------------------Propiedades generales en Main responsive a 350px-----------------*/
+/* -----------------Propiedades generales en Main responsive a 350px-----------------*/
 
 h2 {
     padding: 5% 3% 5% 3%;
@@ -174,17 +175,17 @@ h2 {
     padding-bottom: 1%;
 }
 
-.contacto h3 {
-    text-align: center;
-    color: white;
-    font-size: 1.20rem;
-    margin: 0;
-}
-
 .contacto p {
     color: white;
     text-align: center;
     padding: 1% 3% 1% 3%;
+    margin: 0;
+}
+
+.contacto h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.20rem;
     margin: 0;
 }
 
@@ -252,9 +253,15 @@ textarea {
 .sociales {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 5%;
+    justify-content: space-around;
+    padding: 5%;
     gap: 2%;
+}
+
+.sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
 }
 
 .insta {
@@ -273,4 +280,226 @@ textarea {
 
 /* ...................................................................................................... */
 
-/* Propiedades en Footer */
+/* ....................Media Query para Main a 768px ........ */
+@media (min-width: 768px) {
+    h2 {
+        padding: 3%;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .carousel {
+        padding: 0% 3% 0% 3%;
+    }
+
+    .nuestros-prod {
+        padding-bottom: 5%;
+        border-bottom: 2px solid white;
+
+    }
+
+    /* -----------------------Seccion "Sobre Nosotros" responsive a 350px------------------- */
+
+    .about div {
+        display: flex;
+        padding: 0% 3% 5% 3%;
+        justify-content: space-evenly;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .about p {
+        font-size: 1.25rem;
+        width: 70%;
+        color: white;
+        text-align: center;
+        margin: 0;
+        align-self: center;
+
+    }
+
+    .about {
+        border-bottom: 2px solid white;
+    }
+
+    /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
+    .envio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+        border-bottom: 2px solid white;
+    }
+
+    .envio h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .envio img {
+        width: 100%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .envio p {
+        font-size: 1.25rem;
+        color: white;
+        text-align: center;
+        padding: 2% 8% 2% 8%;
+        margin: 0;
+    }
+
+    .envio a {
+        text-decoration: none;
+        color: rgb(3, 5, 43);
+        background-color: white;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 2%;
+        border-radius: 5%;
+        align-content: center;
+    }
+
+    .envio a:hover {
+        color: white;
+        background-color: rgb(3, 5, 43);
+    }
+
+    /* -------------------Seccion Contacto ----------------------------------------------------- */
+
+    /* Alineacion especial de H2 para seccion "Contacto" */
+    .contacto {
+        padding-bottom: 5%;
+        border-bottom: 2px solid white;
+    }
+
+    .contacto h2 {
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .contacto p {
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding: 1% 15% 1% 15%;
+        margin: 0;
+    }
+
+    .contacto h3 {
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 5% 2% 5%;
+    }
+
+    .img1 h3 {
+        padding-left: 5%;
+    }
+
+    .what {
+        width: 11%;
+    }
+
+    .img2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 5% 2% 5%;
+    }
+
+    .img2 h3 {
+        font-size: 1.8rem;
+        padding-left: 5%;
+    }
+
+    .img3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 5% 2% 5%;
+    }
+
+    .img3 h3 {
+        font-size: 1.7rem;
+        padding-left: 5%;
+    }
+
+    .contacto2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .contacto2 label {
+        color: white;
+        font-size: 1.20rem;
+        padding: 2%;
+    }
+
+    input {
+        width: 64.5%;
+        background-color: white;
+    }
+
+    .label2 input {
+        width: 84%;
+    }
+
+    .label3 input {
+        width: 78.5%;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: white;
+    }
+
+    .label4 input {
+        color: rgb(3, 5, 43);
+        width: 50%;
+    }
+
+}
+
+@media (min-width:768px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sociales a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.25rem;
+    }
+
+    .insta {
+        width: 20%;
+    }
+
+    .face {
+        width: 18%;
+    }
+
+    .logo-foot {
+        width: 100%;
+        align-self: center;
+        padding: 5%;
+    }
+
+}
