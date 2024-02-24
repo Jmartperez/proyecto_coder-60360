@@ -41,44 +41,6 @@ h1 {
     padding-left: 5%;
 }
 
-/* ..................Media Query para Header a 768px........ */
-@media (min-width:768px) {
-    header {
-        color: white;
-        padding-bottom: 1%;
-        border-bottom: 2px solid white;
-    }
-
-    .navbar {
-        padding-bottom: 0%;
-    }
-
-    .logo {
-        max-width: 150px;
-    }
-
-    .collapse {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .font-a {
-        color: white;
-        font-size: 1rem;
-    }
-
-    .font-a:hover {
-        background-color: white;
-        color: rgb(3, 5, 43)
-    }
-
-    h1 {
-        font-size: 0.8rem;
-        text-align: left;
-        padding-left: 2%;
-    }
-
-}
 
 /* -----------------Propiedades generales en Main responsive a 350px-----------------*/
 
@@ -280,6 +242,45 @@ textarea {
 
 /* ...................................................................................................... */
 
+/* ..................Media Query para Header a 768px........ */
+@media (min-width:768px) {
+    header {
+        color: white;
+        padding-bottom: 1%;
+        border-bottom: 2px solid white;
+    }
+
+    .navbar {
+        padding-bottom: 0%;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .font-a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .font-a:hover {
+        background-color: white;
+        color: rgb(3, 5, 43)
+    }
+
+    h1 {
+        font-size: 0.8rem;
+        text-align: left;
+        padding-left: 2%;
+    }
+
+}
+
 /* ....................Media Query para Main a 768px ........ */
 @media (min-width: 768px) {
     h2 {
@@ -371,7 +372,6 @@ textarea {
 
     /* -------------------Seccion Contacto ----------------------------------------------------- */
 
-    /* Alineacion especial de H2 para seccion "Contacto" */
     .contacto {
         padding-bottom: 5%;
         border-bottom: 2px solid white;
@@ -475,6 +475,7 @@ textarea {
 
 }
 
+/* ..............Media Query para Footer a 768px.................. */
 @media (min-width:768px) {
     footer {
         display: flex;
@@ -485,7 +486,7 @@ textarea {
     .sociales a {
         text-decoration: none;
         color: white;
-        font-size: 1.25rem;
+        font-size: 1.35rem;
     }
 
     .insta {
