@@ -5,91 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+      <!-- Link Boottstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
     <!-- Agregado del link a CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <H1>Dis-Dam</H1>
-        <h2>DISTRIBUIDORA MAYORISTA</h2>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/productos.html">Nuestros Productos</a></li>
-                <li><a href="../pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="../pages/zonas-envio.html">Zonas de envio</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md padding-btm">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../img/banner_navbar.png" class="logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon color-w"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link font-a" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-a" href="../pages/sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-a" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-a" href="../pages/zonas-envio.html">Zonas de envio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-a" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-
-    </header>
-    <main>
-        <section>
-            <h2>CONTACTO</h2>
-            <!-- En el párrafo siguiente se describe los metodos de contacto y horarios de atención -->
-            <p>Lorem ipsum dolor sit amet consectetur <br>
-                adipisicing elit. Quasi, dignissimos?</p>
-            <div>
-                <img src="../img/whatsapp.png" alt="numero whatsapp">
-                <h3>112531-6454</h3>
-            </div>
-            <div>
-                <img src="../img/mail.png" alt="mail">
-                <h3>disdam.distri@chemail.com</h3>
-            </div>
-            <div>
-                <img src="../img/ubicacion.png" alt="Nuestra direccion">
-                <h3>A la vuelta de la esquina 1350 <br>
-                    Lunes a Viernes de 7 a 16 hs Sabados de 8 a 13 hs</h3>
-            </div>
-
-
-            <form action="" method="post">
-
-                <div>
-                    <label for="nombre">Nombre y apellido</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Perez">
+        <h1>
+          DISTRIBUIDORA MAYORISTA
+        </h1>
+      </header>
+        <main>
+            <section class="contacto">
+                <h2>CONTACTO</h2>
+                <p>Comunicate con nuestros representantes o
+                  dejanos tus datos y nos pondremos en contacto</p>
+                <div class="contacto1">
+                  <div class="img1">
+                    <img src="../img/whatsapp.png" alt="numero whatsapp" class="what">
+                    <h3>112531-6454</h3>
+                  </div>
+                  <div class="img2">
+                    <img src="../img/mail.png" alt="mail">
+                    <h3>disdam.distri@chemail.com</h3>
+                  </div>
+                  <div class="img3">
+                    <img src="../img/location.png" alt="Nuestra direccion">
+                    <h3>A la vuelta 1350 <br>
+                      L a V de 7 a 16 hs Sab. de 8 a 13 hs</h3>
+                  </div>
                 </div>
-                <div>
-                    <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail">
+          
+                <div class="contacto2">
+                  <form action="" method="post">
+                    <div class="label1">
+                      <label for="nombre">Nombre y apellido</label>
+                      <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Perez">
+                    </div>
+                    <div class="label2">
+                      <label for="mail">E-mail</label>
+                      <input type="email" name="mail" id="mail" placeholder="Ej: nombre@gmail.com">
+                    </div>
+                    <div class="label3">
+                      <label for="telefono">N° celular</label>
+                      <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <div class="label4">
+                      <label for="consulta">Escriba aqui su consulta</label>
+                      <textarea name="consulta" id="consulta" cols="30" rows="8"></textarea>
+                      <input type="submit" class="boton" value="Enviar">
+                    </div>
+                  </form>
                 </div>
-                <div>
-                    <label for="telefono">N° celular</label>
-                    <input type="tel" name="telefono" id="telefono">
-                </div>
-                <div>
-                    <label for="consulta">Escriba aqui su consulta</label>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar">
-                </div>
-
-            </form>
-
-        </section>
-    </main>
+              </section>
+              </main>
     <footer>
-        <!-- El footer lo pense para ingresar un mapa de ubicacion con un texto superpuesto (no se si podra)
-        que indique "Donde nos encuentra" -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26233.945634328076!2d-58.2673194540337!3d-34.724263593728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1705181516325!5m2!1ses!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- Las redes sociales las deje sin titulo puesto que el icono explica por si solo -->
         <div>
-            <img src="../img/insta.png" alt="Instagram">
-            <a
-                href="https://www.instagram.com/disdam_distribuidor?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">disdam_Distribuidor</a>
+          <div class="sociales">
+            <img src="../img/instagram.png" alt="Instagram" class="insta">
+            <a href="https://www.instagram.com/disdam_distribuidor/">Dis-Dam Distribuidora Mayorista</a>
+          </div>
+          <div class="sociales">
+            <img src="../img/facebook.png" alt="Facebook" class="face">
+            <a href="https://www.facebook.com/juan.damici.1">Dis-Dam Distribuidora Mayorista</a>
+          </div>
         </div>
         <div>
-            <img src="../img/jetabook.png" alt="Facebook">
-            <a href="https://www.facebook.com/juan.damici.1">DisDam Distribución</a>
+          <img src="../img/logo.png" alt="logo" class="logo-foot">
         </div>
-        <!-- Agrego al final el logo -->
-        <img src="../img/logo2.png" alt="logo">
-    </footer>
+      </footer>
+    
+      <!-- Archivo javascript de Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
