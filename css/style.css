@@ -776,12 +776,18 @@ textarea {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding: 2% 8% 2% 8%;
+    }
+    .sociales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .sociales a {
         text-decoration: none;
         color: white;
-        font-size: 1.35rem;
+        font-size: 1.7rem;
     }
 
     .insta {
@@ -789,7 +795,8 @@ textarea {
     }
 
     .face {
-        width: 18%;
+        width: 20%;
+        padding-left: 1%;
     }
 
     .logo-foot {
