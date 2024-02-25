@@ -524,6 +524,7 @@ textarea {
     .collapse {
         display: flex;
         justify-content: flex-end;
+        align-items: baseline;
     }
 
     .font-a {
@@ -539,7 +540,7 @@ textarea {
     h1 {
         font-size: 1rem;
         text-align: left;
-        padding-left: 2%;
+        padding-left: 1.8%;
     }
 
 }
