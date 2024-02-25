@@ -100,13 +100,21 @@ h2 {
     width: 100%;
     padding: 0% 2% 0% 2%;
 }
-
 .envio p {
     color: white;
     text-align: center;
     padding: 2%;
     margin: 0;
 }
+
+.envio-fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
 
 .envio a {
     text-decoration: none;
