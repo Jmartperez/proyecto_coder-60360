@@ -653,7 +653,10 @@ textarea {
     /* -------------------Seccion Contacto ----------------------------------------------------- */
 
     .contacto {
-        padding-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 2%;
         border-bottom: 2px solid white;
     }
 
@@ -663,10 +666,11 @@ textarea {
     }
 
     .contacto p {
+        width: 100%;
         font-size: 1.7rem;
         color: white;
         text-align: center;
-        padding: 1% 15% 1% 15%;
+        padding: 1% 10% 1% 10%;
         margin: 0;
     }
 
@@ -677,11 +681,18 @@ textarea {
         margin: 0;
         padding: 0;
     }
+    .contacto1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        padding: 2% 2% 2% 8%;
+    }
 
     .img1 {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 2% 5% 2% 5%;
     }
 
@@ -690,57 +701,61 @@ textarea {
     }
 
     .what {
-        width: 11%;
+        width: 15%;
     }
 
     .img2 {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 2% 5% 2% 5%;
     }
 
     .img2 h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding-left: 5%;
     }
 
     .img3 {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         padding: 2% 5% 2% 5%;
     }
 
     .img3 h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding-left: 5%;
+        text-align: start;
     }
 
     .contacto2 {
+        width: 50%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 5%;
+        padding: 2% 8% 2% 2%;
     }
 
     .contacto2 label {
         color: white;
         font-size: 1.20rem;
-        padding: 2%;
+        padding: 2% 2% 2% 0%;
     }
 
     input {
-        width: 64.5%;
         background-color: white;
+    }
+    .label1 input{
+        width: 64.5%;
     }
 
     .label2 input {
-        width: 84%;
+        width: 85.5%;
     }
 
     .label3 input {
-        width: 78.5%;
+        width: 79.5%;
     }
 
     textarea {
