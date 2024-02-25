@@ -307,6 +307,7 @@ textarea {
 }
 
 /* ....................Media Query para Main a 768px ........ */
+/* ....................Seccion "Productos"................ */
 @media (min-width: 768px) {
     h2 {
         padding: 3%;
@@ -422,11 +423,16 @@ textarea {
         margin: 0;
         padding: 0;
     }
+    .contacto1{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5% 10% 5% 15%;
+    }
 
     .img1 {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 2% 5% 2% 5%;
     }
 
@@ -435,31 +441,39 @@ textarea {
     }
 
     .what {
-        width: 11%;
+        width: 15%;
     }
 
     .img2 {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 2% 5% 2% 5%;
+    }
+    .img2 img{
+        width: 15%;
     }
 
     .img2 h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding-left: 5%;
     }
 
     .img3 {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 2% 5% 2% 5%;
+        width: 100%;
+    }
+    .img3 img{
+        width: 16%;
     }
 
     .img3 h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding-left: 5%;
+        text-align: start;
     }
 
     .contacto2 {
@@ -472,20 +486,20 @@ textarea {
     .contacto2 label {
         color: white;
         font-size: 1.20rem;
-        padding: 2%;
+        padding: 2% 2% 2% 0%;
     }
 
     input {
-        width: 64.5%;
+        width: 66.5%;
         background-color: white;
     }
 
     .label2 input {
-        width: 84%;
+        width: 86%;
     }
 
     .label3 input {
-        width: 78.5%;
+        width: 80.5%;
     }
 
     textarea {
