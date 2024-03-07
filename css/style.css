@@ -1,850 +1,742 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: none;
-    background-color: rgb(3, 5, 43);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  background-color: rgb(3, 5, 43);
 }
 
 /* -----------------------------Mobile Responsive a partir de 350px--------------------- */
-
 /* Propiedades en Header responsive a 350px */
-
 header {
-    color: rgb(255, 255, 255);
-    padding-bottom: 5%;
-    border-bottom: 2px solid white;
+  color: rgb(255, 255, 255);
+  padding-bottom: 5%;
+  border-bottom: 2px solid white;
 }
 
-.navbar-toggler-icon{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-.navbar-toggler{
-    color: transparent;
+
+.navbar-toggler {
+  color: transparent;
 }
+
 .navbar {
-    padding-bottom: 0%;
+  padding-bottom: 0%;
 }
 
 .logo {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 .font-a {
-    color: white;
-    font-size: 1.25rem;
+  color: white;
+  font-size: 1.25rem;
 }
 
 .font-a:hover {
-    background-color: white;
-    color: rgb(3, 5, 43)
+  background-color: white;
+  color: rgb(3, 5, 43);
 }
 
 h1 {
-    font-size: 0.8rem;
-    text-align: left;
-    padding-left: 5%;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 5%;
 }
 
-
 /* -----------------Propiedades generales en Main responsive a 350px-----------------*/
-
 h2 {
-    padding: 5% 3% 5% 3%;
-    color: white;
-    text-align: center;
-    font-size: 1.25rem;
-    margin: 0;
+  padding: 5% 3% 5% 3%;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 .nuestros-prod {
-    padding-bottom: 8%;
-    border-bottom: 2px solid white;
-
+  padding-bottom: 8%;
+  border-bottom: 2px solid white;
 }
 
 /* -----------------------Seccion "Sobre Nosotros" responsive a 350px------------------- */
-
 .about div {
-    display: flex;
-    padding: 0% 3% 0% 3%;
-    justify-content: space-evenly;
+  display: flex;
+  padding: 0% 3% 0% 3%;
+  justify-content: space-evenly;
 }
 
 .about img {
-    max-width: 100%;
-    height: 100%;
-    align-self: center;
+  max-width: 100%;
+  height: 100%;
+  align-self: center;
 }
 
 .about p {
-    width: 60%;
-    color: white;
-    text-align: center;
+  width: 60%;
+  color: white;
+  text-align: center;
 }
 
 .about {
-    border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
 .envio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 8%;
-    border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8%;
+  border-bottom: 2px solid white;
 }
 
 .envio h2 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .envio img {
-    width: 100%;
-    padding: 0% 2% 0% 2%;
+  width: 100%;
+  padding: 0% 2% 0% 2%;
 }
+
 .envio p {
-    color: white;
-    font-size: 1.25rem;
-    text-align: center;
-    padding: 2%;
-    margin: 0;
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 2%;
+  margin: 0;
 }
 
-.envio-fila{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5%;
+.envio-fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
 }
-
 
 .envio a {
+  text-decoration: none;
+  color: rgb(3, 5, 43);
+  background-color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 4%;
+  border-radius: 5%;
+  align-content: center;
+}
+
+.envio a:hover {
+  color: white;
+  background-color: rgb(3, 5, 43);
+}
+
+/* -------------------Seccion Contacto ----------------------------------------------------- */
+/* Alineacion especial de H2 para seccion "Contacto" */
+.contacto {
+  padding-bottom: 8%;
+  border-bottom: 2px solid white;
+}
+
+.contacto h2 {
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.contacto p {
+  color: white;
+  text-align: center;
+  padding: 1% 3% 1% 3%;
+  margin: 0;
+}
+
+.contacto h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contacto1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 5% 3% 5% 3%;
+}
+
+.img1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2% 5% 2% 5%;
+}
+
+.img1 h3 {
+  padding-left: 5%;
+}
+
+.what {
+  width: 22%;
+}
+
+.img2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2% 5% 2% 5%;
+  width: 100%;
+}
+
+.img2 h3 {
+  font-size: 1.1rem;
+  padding-left: 5%;
+}
+
+.img3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2% 5% 2% 5%;
+}
+
+.img3 h3 {
+  font-size: 1.1rem;
+  padding-left: 4%;
+  text-align: left;
+}
+
+.contacto2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+.contacto2 label {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2%;
+}
+
+input {
+  width: 100%;
+  background-color: white;
+}
+
+textarea {
+  width: 100%;
+  background-color: white;
+}
+
+/* .............Footer responsive a 350px............... */
+.sociales {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  gap: 2%;
+}
+
+.sociales a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.insta {
+  width: 20%;
+}
+
+.face {
+  width: 18%;
+}
+
+.logo-foot {
+  width: 100%;
+  align-self: center;
+}
+
+/* ...................................................................................................... */
+/* ..................Media Query para Header a 768px........ */
+@media (min-width: 768px) {
+  header {
+    color: white;
+    padding-bottom: 1%;
+    border-bottom: 2px solid white;
+  }
+  .navbar {
+    padding-bottom: 0%;
+  }
+  .logo {
+    max-width: 150px;
+  }
+  .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .font-a {
+    color: white;
+    font-size: 1rem;
+  }
+  .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
+  h1 {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 2%;
+  }
+}
+/* ....................Media Query para Main a 768px ........ */
+/* ....................Seccion "Productos"................ */
+@media (min-width: 768px) {
+  h2 {
+    padding: 3%;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .carousel {
+    padding: 0% 3% 0% 3%;
+  }
+  .nuestros-prod {
+    padding-bottom: 5%;
+    border-bottom: 2px solid white;
+  }
+  /* -----------------------Seccion "Sobre Nosotros"------------------- */
+  .about div {
+    display: flex;
+    padding: 0% 3% 5% 3%;
+    justify-content: space-evenly;
+  }
+  .about img {
+    max-width: 100%;
+  }
+  .about p {
+    font-size: 1.25rem;
+    width: 70%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    align-self: center;
+  }
+  .about {
+    border-bottom: 2px solid white;
+  }
+  /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
+  .envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    border-bottom: 2px solid white;
+  }
+  .envio h2 {
+    color: white;
+    text-align: center;
+  }
+  .envio img {
+    width: 100%;
+    padding: 0% 5% 0% 5%;
+  }
+  .envio p {
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding: 2% 8% 2% 8%;
+    margin: 0;
+  }
+  .envio a {
     text-decoration: none;
     color: rgb(3, 5, 43);
     background-color: white;
     font-size: 1.25rem;
     font-weight: bold;
-    padding: 4%;
+    padding: 2%;
     border-radius: 5%;
     align-content: center;
-}
-
-.envio a:hover {
+  }
+  .envio a:hover {
     color: white;
     background-color: rgb(3, 5, 43);
-}
-
-/* -------------------Seccion Contacto ----------------------------------------------------- */
-
-/* Alineacion especial de H2 para seccion "Contacto" */
-.contacto {
-    padding-bottom: 8%;
+  }
+  /* -------------------Seccion Contacto ----------------------------------------------------- */
+  .contacto {
+    padding-bottom: 5%;
     border-bottom: 2px solid white;
-}
-
-.contacto h2 {
+  }
+  .contacto h2 {
     text-align: center;
     padding-bottom: 1%;
-}
-
-.contacto p {
+  }
+  .contacto p {
+    font-size: 1.4rem;
     color: white;
     text-align: center;
-    padding: 1% 3% 1% 3%;
+    padding: 1% 15% 1% 15%;
     margin: 0;
-}
-
-.contacto h3 {
+  }
+  .contacto h3 {
     text-align: center;
     color: white;
-    font-size: 1.20rem;
+    font-size: 1.5rem;
     margin: 0;
-}
-
-.contacto1 {
+    padding: 0;
+  }
+  .contacto1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 5% 3% 5% 3%;
-}
-
-.img1 {
+    padding: 5% 10% 5% 15%;
+  }
+  .img1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
-}
-.img1 h3{
+  }
+  .img1 h3 {
     padding-left: 5%;
-}
-
-.what {
-    width: 22%;
-}
-
-.img2 {
+  }
+  .what {
+    width: 15%;
+  }
+  .img2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2% 5% 2% 5%;
+  }
+  .img2 img {
+    width: 15%;
+  }
+  .img2 h3 {
+    font-size: 1.6rem;
+    padding-left: 5%;
+  }
+  .img3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
     width: 100%;
-}
-
-.img2 h3 {
-    font-size: 1.1rem;
+  }
+  .img3 img {
+    width: 16%;
+  }
+  .img3 h3 {
+    font-size: 1.5rem;
     padding-left: 5%;
-}
-
-.img3 {
+    text-align: start;
+  }
+  .contacto2 {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2% 5% 2% 5%;
-}
-.img3 h3{
-    font-size: 1.1rem;
-    padding-left: 4%;
-    text-align: left;
-}
-
-.contacto2 {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding: 5%;
-}
-
-.contacto2 label {
+  }
+  .contacto2 label {
     color: white;
-    font-size: 1.20rem;
-    padding: 2%;
-}
-
-input {
+    font-size: 1.2rem;
+    padding: 2% 2% 2% 0%;
+  }
+  input {
+    width: 66.5%;
+    background-color: white;
+  }
+  .label2 input {
+    width: 86%;
+  }
+  .label3 input {
+    width: 80.5%;
+  }
+  textarea {
     width: 100%;
     background-color: white;
+  }
+  .label4 input {
+    color: rgb(3, 5, 43);
+    width: 50%;
+  }
 }
-
-textarea {
-    width: 100%;
-    background-color: white;
-}
-
-/* .............Footer responsive a 350px............... */
-
-.sociales {
+/* ..............Media Query para Footer a 768px.................. */
+@media (min-width: 768px) {
+  footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5%;
-    gap: 2%;
-}
-
-.sociales a {
+  }
+  .sociales a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
-}
-
-.insta {
+    font-size: 1.35rem;
+  }
+  .insta {
     width: 20%;
-}
-
-.face {
+  }
+  .face {
     width: 18%;
-}
-
-.logo-foot {
+  }
+  .logo-foot {
     width: 100%;
     align-self: center;
-}
-
-
-/* ...................................................................................................... */
-
-/* ..................Media Query para Header a 768px........ */
-@media (min-width:768px) {
-    header {
-        color: white;
-        padding-bottom: 1%;
-        border-bottom: 2px solid white;
-    }
-
-    .navbar {
-        padding-bottom: 0%;
-    }
-
-    .logo {
-        max-width: 150px;
-    }
-
-    .collapse {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .font-a {
-        color: white;
-        font-size: 1rem;
-    }
-
-    .font-a:hover {
-        background-color: white;
-        color: rgb(3, 5, 43)
-    }
-
-    h1 {
-        font-size: 0.8rem;
-        text-align: left;
-        padding-left: 2%;
-    }
-
-}
-
-/* ....................Media Query para Main a 768px ........ */
-/* ....................Seccion "Productos"................ */
-@media (min-width: 768px) {
-    h2 {
-        padding: 3%;
-        color: white;
-        text-align: center;
-        font-size: 1.5rem;
-        margin: 0;
-    }
-
-    .carousel {
-        padding: 0% 3% 0% 3%;
-    }
-
-    .nuestros-prod {
-        padding-bottom: 5%;
-        border-bottom: 2px solid white;
-
-    }
-
-    /* -----------------------Seccion "Sobre Nosotros"------------------- */
-
-    .about div {
-        display: flex;
-        padding: 0% 3% 5% 3%;
-        justify-content: space-evenly;
-    }
-
-    .about img {
-        max-width: 100%;
-    }
-
-    .about p {
-        font-size: 1.25rem;
-        width: 70%;
-        color: white;
-        text-align: center;
-        margin: 0;
-        align-self: center;
-
-    }
-
-    .about {
-        border-bottom: 2px solid white;
-    }
-
-    /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
-    .envio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 5%;
-        border-bottom: 2px solid white;
-    }
-
-    .envio h2 {
-        color: white;
-        text-align: center;
-    }
-
-    .envio img {
-        width: 100%;
-        padding: 0% 5% 0% 5%;
-    }
-
-    .envio p {
-        font-size: 1.25rem;
-        color: white;
-        text-align: center;
-        padding: 2% 8% 2% 8%;
-        margin: 0;
-    }
-
-    .envio a {
-        text-decoration: none;
-        color: rgb(3, 5, 43);
-        background-color: white;
-        font-size: 1.25rem;
-        font-weight: bold;
-        padding: 2%;
-        border-radius: 5%;
-        align-content: center;
-    }
-
-    .envio a:hover {
-        color: white;
-        background-color: rgb(3, 5, 43);
-    }
-
-    /* -------------------Seccion Contacto ----------------------------------------------------- */
-
-    .contacto {
-        padding-bottom: 5%;
-        border-bottom: 2px solid white;
-    }
-
-    .contacto h2 {
-        text-align: center;
-        padding-bottom: 1%;
-    }
-
-    .contacto p {
-        font-size: 1.4rem;
-        color: white;
-        text-align: center;
-        padding: 1% 15% 1% 15%;
-        margin: 0;
-    }
-
-    .contacto h3 {
-        text-align: center;
-        color: white;
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 0;
-    }
-    .contacto1{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 5% 10% 5% 15%;
-    }
-
-    .img1 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-
-    .img1 h3 {
-        padding-left: 5%;
-    }
-
-    .what {
-        width: 15%;
-    }
-
-    .img2 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-    .img2 img{
-        width: 15%;
-    }
-
-    .img2 h3 {
-        font-size: 1.6rem;
-        padding-left: 5%;
-    }
-
-    .img3 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-        width: 100%;
-    }
-    .img3 img{
-        width: 16%;
-    }
-
-    .img3 h3 {
-        font-size: 1.5rem;
-        padding-left: 5%;
-        text-align: start;
-    }
-
-    .contacto2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 5%;
-    }
-
-    .contacto2 label {
-        color: white;
-        font-size: 1.20rem;
-        padding: 2% 2% 2% 0%;
-    }
-
-    input {
-        width: 66.5%;
-        background-color: white;
-    }
-
-    .label2 input {
-        width: 86%;
-    }
-
-    .label3 input {
-        width: 80.5%;
-    }
-
-    textarea {
-        width: 100%;
-        background-color: white;
-    }
-
-    .label4 input {
-        color: rgb(3, 5, 43);
-        width: 50%;
-    }
-
-}
-
-/* ..............Media Query para Footer a 768px.................. */
-@media (min-width:768px) {
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .sociales a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.35rem;
-    }
-
-    .insta {
-        width: 20%;
-    }
-
-    .face {
-        width: 18%;
-    }
-
-    .logo-foot {
-        width: 100%;
-        align-self: center;
-        padding: 5%;
-    }
-
+    padding: 5%;
+  }
 }
 /* ..............Media Query para Header a 1200px .....................*/
-@media (min-width:1200px){
-    header {
-        color: white;
-        padding: 0% 8% 1% 8%;
-        border-bottom: 2px solid white;
-
-    }
-
-    .navbar {
-        padding-bottom: 0%;
-    }
-
-    .logo {
-        max-width: 200px;
-    }
-
-    .collapse {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .font-a {
-        color: white;
-        font-size: 1.2rem;
-    }
-
-    .font-a:hover {
-        background-color: white;
-        color: rgb(3, 5, 43)
-    }
-
-    h1 {
-        font-size: 1rem;
-        text-align: left;
-        padding-left: 1.8%;
-    }
-
+@media (min-width: 1200px) {
+  header {
+    color: white;
+    padding: 0% 8% 1% 8%;
+    border-bottom: 2px solid white;
+  }
+  .navbar {
+    padding-bottom: 0%;
+  }
+  .logo {
+    max-width: 200px;
+  }
+  .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .font-a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
+  h1 {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1.8%;
+  }
 }
-
 /* ....................Media Query para Main a 1200px ........ */
 @media (min-width: 1200px) {
-    h2 {
-        padding: 3%;
-        color: white;
-        text-align: center;
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-    .carousel {
-        padding: 0% 8% 0% 8%;
-    }
-
-    .nuestros-prod {
-        padding-bottom: 5%;
-        border-bottom: 2px solid white;
-
-    }
-
-    /* -----------------------Seccion "Sobre Nosotros" ------------------- */
-
-    .about div {
-        display: flex;
-        padding: 0% 3% 5% 3%;
-        justify-content: center;
-    }
-
-    .about img {
-        width: 25%;
-    }
-
-    .about p {
-        font-size: 1.8rem;
-        width: 60%;
-        color: white;
-        text-align: left;
-        margin: 0;
-        align-self: center;
-
-    }
-
-    .about {
-        border-bottom: 2px solid white;
-    }
-
-    /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
-    .envio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 3%;
-        border-bottom: 2px solid white;
-    }
-    .envio p {
-        font-size: 1.7rem;
-        color: white;
-        text-align: center;
-        padding: 2% 8% 2% 8%;
-        margin: 0;
-    }
-
-    .envio-fila{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 0% 8% 0% 8%;
-    }
-
-    .envio-fila p{
-        width: 68%;
-        padding: 2% 0% 2% 0%;
-        text-align: left;
-    }
-    .envio-fila a{
-        height: 100%;
-    }
-
-    .envio h2 {
-        color: white;
-        text-align: center;
-    }
-
-    .envio img {
-        width: 100%;
-        padding: 0% 8% 0% 8%;
-    }
-
-
-    .envio a {
-        text-decoration: none;
-        color: rgb(3, 5, 43);
-        background-color: white;
-        font-size: 1.7rem;
-        font-weight: bold;
-        padding: 2%;
-        border-radius: 5%;
-        align-content: center;
-    }
-
-    .envio a:hover {
-        color: white;
-        background-color: rgb(3, 5, 43);
-    }
-
-    /* -------------------Seccion Contacto ----------------------------------------------------- */
-
-    .contacto {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-bottom: 2%;
-        border-bottom: 2px solid white;
-    }
-
-    .contacto h2 {
-        text-align: center;
-        padding-bottom: 1%;
-    }
-
-    .contacto p {
-        width: 100%;
-        font-size: 1.7rem;
-        color: white;
-        text-align: center;
-        padding: 1% 10% 1% 10%;
-        margin: 0;
-    }
-
-    .contacto h3 {
-        text-align: center;
-        color: white;
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 0;
-    }
-    .contacto1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-        padding: 2% 2% 2% 8%;
-    }
-
-    .img1 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-
-    .img1 h3 {
-        padding-left: 5%;
-    }
-
-    .what {
-        width: 15%;
-    }
-
-    .img2 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-
-    .img2 h3 {
-        font-size: 1.6rem;
-        padding-left: 5%;
-    }
-
-    .img3 {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-
-    .img3 h3 {
-        font-size: 1.5rem;
-        padding-left: 5%;
-        text-align: start;
-    }
-
-    .contacto2 {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 2% 8% 2% 2%;
-    }
-
-    .contacto2 label {
-        color: white;
-        font-size: 1.20rem;
-        padding: 2% 2% 2% 0%;
-    }
-
-    input {
-        background-color: white;
-    }
-    .label1 input{
-        width: 64.5%;
-    }
-
-    .label2 input {
-        width: 85.5%;
-    }
-
-    .label3 input {
-        width: 79.5%;
-    }
-
-    textarea {
-        width: 100%;
-        background-color: white;
-    }
-
-    .label4 input {
-        color: rgb(3, 5, 43);
-        width: 50%;
-    }
-
+  h2 {
+    padding: 3%;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .carousel {
+    padding: 0% 8% 0% 8%;
+  }
+  .nuestros-prod {
+    padding-bottom: 5%;
+    border-bottom: 2px solid white;
+  }
+  /* -----------------------Seccion "Sobre Nosotros" ------------------- */
+  .about div {
+    display: flex;
+    padding: 0% 3% 5% 3%;
+    justify-content: center;
+  }
+  .about img {
+    width: 25%;
+  }
+  .about p {
+    font-size: 1.8rem;
+    width: 60%;
+    color: white;
+    text-align: left;
+    margin: 0;
+    align-self: center;
+  }
+  .about {
+    border-bottom: 2px solid white;
+  }
+  /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
+  .envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+    border-bottom: 2px solid white;
+  }
+  .envio p {
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    padding: 2% 8% 2% 8%;
+    margin: 0;
+  }
+  .envio-fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 8% 0% 8%;
+  }
+  .envio-fila p {
+    width: 68%;
+    padding: 2% 0% 2% 0%;
+    text-align: left;
+  }
+  .envio-fila a {
+    height: 100%;
+  }
+  .envio h2 {
+    color: white;
+    text-align: center;
+  }
+  .envio img {
+    width: 100%;
+    padding: 0% 8% 0% 8%;
+  }
+  .envio a {
+    text-decoration: none;
+    color: rgb(3, 5, 43);
+    background-color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 5%;
+    align-content: center;
+  }
+  .envio a:hover {
+    color: white;
+    background-color: rgb(3, 5, 43);
+  }
+  /* -------------------Seccion Contacto ----------------------------------------------------- */
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+    border-bottom: 2px solid white;
+  }
+  .contacto h2 {
+    text-align: center;
+    padding-bottom: 1%;
+  }
+  .contacto p {
+    width: 100%;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    padding: 1% 10% 1% 10%;
+    margin: 0;
+  }
+  .contacto h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .contacto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 2% 2% 2% 8%;
+  }
+  .img1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2% 5% 2% 5%;
+  }
+  .img1 h3 {
+    padding-left: 5%;
+  }
+  .what {
+    width: 15%;
+  }
+  .img2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2% 5% 2% 5%;
+  }
+  .img2 h3 {
+    font-size: 1.6rem;
+    padding-left: 5%;
+  }
+  .img3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2% 5% 2% 5%;
+  }
+  .img3 h3 {
+    font-size: 1.5rem;
+    padding-left: 5%;
+    text-align: start;
+  }
+  .contacto2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2% 8% 2% 2%;
+  }
+  .contacto2 label {
+    color: white;
+    font-size: 1.2rem;
+    padding: 2% 2% 2% 0%;
+  }
+  input {
+    background-color: white;
+  }
+  .label1 input {
+    width: 64.5%;
+  }
+  .label2 input {
+    width: 85.5%;
+  }
+  .label3 input {
+    width: 79.5%;
+  }
+  textarea {
+    width: 100%;
+    background-color: white;
+  }
+  .label4 input {
+    color: rgb(3, 5, 43);
+    width: 50%;
+  }
 }
-
 /* ..............Media Query para Footer a 1200px.................. */
-@media (min-width:1200px) {
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 2% 8% 2% 8%;
-    }
-    .sociales{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .sociales a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.7rem;
-    }
-
-    .insta {
-        width: 20%;
-    }
-
-    .face {
-        width: 20%;
-        padding-left: 1%;
-    }
-
-    .logo-foot {
-        width: 100%;
-        align-self: center;
-        padding: 5%;
-    }
-
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 8% 2% 8%;
+  }
+  .sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+  }
+  .insta {
+    width: 20%;
+  }
+  .face {
+    width: 20%;
+    padding-left: 1%;
+  }
+  .logo-foot {
+    width: 100%;
+    align-self: center;
+    padding: 5%;
+  }
 }
 
-
-
+/*# sourceMappingURL=style.css.map */
