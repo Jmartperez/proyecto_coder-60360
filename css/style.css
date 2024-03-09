@@ -231,57 +231,58 @@ footer .logo-foot {
     padding-bottom: 1%;
     border-bottom: 2px solid white;
   }
-  .navbar {
-    padding-bottom: 0%;
-  }
-  .logo {
-    max-width: 150px;
-  }
-  .collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .font-a {
-    color: white;
-    font-size: 1rem;
-  }
-  .font-a:hover {
-    background-color: white;
-    color: rgb(3, 5, 43);
-  }
-  h1 {
+  header h1 {
     font-size: 0.8rem;
     text-align: left;
     padding-left: 2%;
   }
+  header .logo {
+    max-width: 150px;
+  }
+  header nav .navbar {
+    padding-bottom: 0%;
+  }
+  header nav .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .font-a {
+    color: white;
+    font-size: 1rem;
+  }
+  header nav .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
 }
 /* ....................Media Query para Main a 768px ........ */
-/* ....................Seccion "Productos"................ */
 @media (min-width: 768px) {
-  h2 {
+  main h2 {
     padding: 3%;
     color: white;
     text-align: center;
     font-size: 1.5rem;
     margin: 0;
   }
-  .carousel {
-    padding: 0% 3% 0% 3%;
-  }
-  .nuestros-prod {
+  main .nuestros-prod {
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  /* -----------------------Seccion "Sobre Nosotros"------------------- */
-  .about div {
+  main .nuestros-prod .carousel {
+    padding: 0% 3% 0% 3%;
+  }
+  main .about {
+    border-bottom: 2px solid white;
+  }
+  main .about div {
     display: flex;
     padding: 0% 3% 5% 3%;
     justify-content: space-evenly;
   }
-  .about img {
+  main .about img {
     max-width: 100%;
   }
-  .about p {
+  main .about p {
     font-size: 1.25rem;
     width: 70%;
     color: white;
@@ -289,33 +290,29 @@ footer .logo-foot {
     margin: 0;
     align-self: center;
   }
-  .about {
-    border-bottom: 2px solid white;
-  }
-  /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
-  .envio {
+  main .envio {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  .envio h2 {
+  main .envio h2 {
     color: white;
     text-align: center;
   }
-  .envio img {
+  main .envio img {
     width: 100%;
     padding: 0% 5% 0% 5%;
   }
-  .envio p {
+  main .envio p {
     font-size: 1.25rem;
     color: white;
     text-align: center;
     padding: 2% 8% 2% 8%;
     margin: 0;
   }
-  .envio a {
+  main .envio a {
     text-decoration: none;
     color: rgb(3, 5, 43);
     background-color: white;
@@ -325,104 +322,103 @@ footer .logo-foot {
     border-radius: 5%;
     align-content: center;
   }
-  .envio a:hover {
+  main .envio a:hover {
     color: white;
     background-color: rgb(3, 5, 43);
   }
-  /* -------------------Seccion Contacto ----------------------------------------------------- */
-  .contacto {
+  main .contacto {
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  .contacto h2 {
+  main .contacto h2 {
     text-align: center;
     padding-bottom: 1%;
   }
-  .contacto p {
+  main .contacto p {
     font-size: 1.4rem;
     color: white;
     text-align: center;
     padding: 1% 15% 1% 15%;
     margin: 0;
   }
-  .contacto h3 {
+  main .contacto h3 {
     text-align: center;
     color: white;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
   }
-  .contacto1 {
+  main .contacto .contacto1 {
     display: flex;
     flex-wrap: wrap;
     padding: 5% 10% 5% 15%;
   }
-  .img1 {
+  main .contacto .contacto1 .img1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  .img1 h3 {
+  main .contacto .contacto1 .img1 h3 {
     padding-left: 5%;
   }
-  .what {
+  main .contacto .contacto1 .what {
     width: 15%;
   }
-  .img2 {
+  main .contacto .contacto1 .img2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  .img2 img {
+  main .contacto .contacto1 .img2 img {
     width: 15%;
   }
-  .img2 h3 {
+  main .contacto .contacto1 .img2 h3 {
     font-size: 1.6rem;
     padding-left: 5%;
   }
-  .img3 {
+  main .contacto .contacto1 .img3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
     width: 100%;
   }
-  .img3 img {
+  main .contacto .contacto1 .img3 img {
     width: 16%;
   }
-  .img3 h3 {
+  main .contacto .contacto1 .img3 h3 {
     font-size: 1.5rem;
     padding-left: 5%;
     text-align: start;
   }
-  .contacto2 {
+  main .contacto .contacto2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 5%;
   }
-  .contacto2 label {
+  main .contacto .contacto2 label {
     color: white;
     font-size: 1.2rem;
     padding: 2% 2% 2% 0%;
   }
-  input {
+  main .contacto .contacto2 input {
     width: 66.5%;
     background-color: white;
   }
-  .label2 input {
-    width: 86%;
-  }
-  .label3 input {
-    width: 80.5%;
-  }
-  textarea {
+  main .contacto .contacto2 textarea {
     width: 100%;
     background-color: white;
   }
-  .label4 input {
+  main .contacto .contacto2 .label2 input {
+    width: 86%;
+  }
+  main .contacto .contacto2 .label3 input {
+    width: 80.5%;
+  }
+  main .contacto .contacto2 .label4 input {
     color: rgb(3, 5, 43);
     width: 50%;
   }
@@ -434,18 +430,18 @@ footer .logo-foot {
     align-items: center;
     justify-content: space-around;
   }
-  .sociales a {
+  footer .sociales a {
     text-decoration: none;
     color: white;
     font-size: 1.35rem;
   }
-  .insta {
+  footer .insta {
     width: 20%;
   }
-  .face {
+  footer .face {
     width: 18%;
   }
-  .logo-foot {
+  footer .logo-foot {
     width: 100%;
     align-self: center;
     padding: 5%;
@@ -458,56 +454,58 @@ footer .logo-foot {
     padding: 0% 8% 1% 8%;
     border-bottom: 2px solid white;
   }
-  .navbar {
-    padding-bottom: 0%;
-  }
-  .logo {
+  header .logo {
     max-width: 200px;
   }
-  .collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .font-a {
-    color: white;
-    font-size: 1.2rem;
-  }
-  .font-a:hover {
-    background-color: white;
-    color: rgb(3, 5, 43);
-  }
-  h1 {
+  header h1 {
     font-size: 1rem;
     text-align: left;
     padding-left: 1.8%;
   }
+  header nav .navbar {
+    padding-bottom: 0%;
+  }
+  header nav .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .font-a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  header nav .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
 }
 /* ....................Media Query para Main a 1200px ........ */
 @media (min-width: 1200px) {
-  h2 {
+  main h2 {
     padding: 3%;
     color: white;
     text-align: center;
     font-size: 1.8rem;
     margin: 0;
   }
-  .carousel {
-    padding: 0% 8% 0% 8%;
-  }
-  .nuestros-prod {
+  main .nuestros-prod {
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  /* -----------------------Seccion "Sobre Nosotros" ------------------- */
-  .about div {
+  main .nuestros-prod .carousel {
+    padding: 0% 8% 0% 8%;
+  }
+  main .about {
+    border-bottom: 2px solid white;
+  }
+  main .about div {
     display: flex;
     padding: 0% 3% 5% 3%;
     justify-content: center;
   }
-  .about img {
+  main .about img {
     width: 25%;
   }
-  .about p {
+  main .about p {
     font-size: 1.8rem;
     width: 60%;
     color: white;
@@ -515,48 +513,29 @@ footer .logo-foot {
     margin: 0;
     align-self: center;
   }
-  .about {
-    border-bottom: 2px solid white;
-  }
-  /* ---------------------Seccion Zonas de envio----------------------------------------------------- */
-  .envio {
+  main .envio {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 3%;
     border-bottom: 2px solid white;
   }
-  .envio p {
+  main .envio p {
     font-size: 1.7rem;
     color: white;
     text-align: center;
     padding: 2% 8% 2% 8%;
     margin: 0;
   }
-  .envio-fila {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0% 8% 0% 8%;
-  }
-  .envio-fila p {
-    width: 68%;
-    padding: 2% 0% 2% 0%;
-    text-align: left;
-  }
-  .envio-fila a {
-    height: 100%;
-  }
-  .envio h2 {
+  main .envio h2 {
     color: white;
     text-align: center;
   }
-  .envio img {
+  main .envio img {
     width: 100%;
     padding: 0% 8% 0% 8%;
   }
-  .envio a {
+  main .envio a {
     text-decoration: none;
     color: rgb(3, 5, 43);
     background-color: white;
@@ -566,23 +545,37 @@ footer .logo-foot {
     border-radius: 5%;
     align-content: center;
   }
-  .envio a:hover {
+  main .envio a:hover {
     color: white;
     background-color: rgb(3, 5, 43);
   }
-  /* -------------------Seccion Contacto ----------------------------------------------------- */
-  .contacto {
+  main .envio .envio-fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 8% 0% 8%;
+  }
+  main .envio .envio-fila p {
+    width: 68%;
+    padding: 2% 0% 2% 0%;
+    text-align: left;
+  }
+  main .envio .envio-fila a {
+    height: 100%;
+  }
+  main .contacto {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 2%;
     border-bottom: 2px solid white;
   }
-  .contacto h2 {
+  main .contacto h2 {
     text-align: center;
     padding-bottom: 1%;
   }
-  .contacto p {
+  main .contacto p {
     width: 100%;
     font-size: 1.7rem;
     color: white;
@@ -590,82 +583,82 @@ footer .logo-foot {
     padding: 1% 10% 1% 10%;
     margin: 0;
   }
-  .contacto h3 {
+  main .contacto h3 {
     text-align: center;
     color: white;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
   }
-  .contacto1 {
+  main .contacto .contacto1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
     padding: 2% 2% 2% 8%;
   }
-  .img1 {
+  main .contacto .contacto1 .img1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  .img1 h3 {
+  main .contacto .contacto1 .img1 h3 {
     padding-left: 5%;
   }
-  .what {
+  main .contacto .contacto1 .img1 .what {
     width: 15%;
   }
-  .img2 {
+  main .contacto .contacto1 .img2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  .img2 h3 {
+  main .contacto .contacto1 .img2 h3 {
     font-size: 1.6rem;
     padding-left: 5%;
   }
-  .img3 {
+  main .contacto .contacto1 .img3 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  .img3 h3 {
+  main .contacto .contacto1 .img3 h3 {
     font-size: 1.5rem;
     padding-left: 5%;
     text-align: start;
   }
-  .contacto2 {
+  main .contacto .contacto2 {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2% 8% 2% 2%;
   }
-  .contacto2 label {
+  main .contacto .contacto2 label {
     color: white;
     font-size: 1.2rem;
     padding: 2% 2% 2% 0%;
   }
-  input {
+  main .contacto .contacto2 input {
     background-color: white;
   }
-  .label1 input {
-    width: 64.5%;
-  }
-  .label2 input {
-    width: 85.5%;
-  }
-  .label3 input {
-    width: 79.5%;
-  }
-  textarea {
+  main .contacto .contacto2 textarea {
     width: 100%;
     background-color: white;
   }
-  .label4 input {
+  main .contacto .contacto2 .label1 input {
+    width: 64.5%;
+  }
+  main .contacto .contacto2 .label2 input {
+    width: 85.5%;
+  }
+  main .contacto .contacto2 .label3 input {
+    width: 79.5%;
+  }
+  main .contacto .contacto2 .label4 input {
     color: rgb(3, 5, 43);
     width: 50%;
   }
@@ -678,24 +671,24 @@ footer .logo-foot {
     justify-content: space-around;
     padding: 2% 8% 2% 8%;
   }
-  .sociales {
+  footer .sociales {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .sociales a {
+  footer .sociales a {
     text-decoration: none;
     color: white;
     font-size: 1.7rem;
   }
-  .insta {
+  footer .insta {
     width: 20%;
   }
-  .face {
+  footer .face {
     width: 20%;
     padding-left: 1%;
   }
-  .logo-foot {
+  footer .logo-foot {
     width: 100%;
     align-self: center;
     padding: 5%;
