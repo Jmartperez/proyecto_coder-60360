@@ -265,6 +265,7 @@ footer .logo-foot {
   transform: scale(1.1);
   transition-duration: 0.5s;
   color: white;
+  background-color: rgb(3, 5, 43);
 }
 .envio .envio-fila {
   display: flex;
