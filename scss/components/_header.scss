@@ -1,0 +1,98 @@
+header {
+    color: $color-primary;
+    padding-bottom: 5%;
+    border-bottom: 2px solid $color-primary;
+    h1 {
+        font-size: 0.8rem;
+        text-align: left;
+        padding-left: 5%;
+    }
+    .logo {
+        max-width: 150px;
+    }
+    nav {
+        .font-a {
+            color: $color-primary;
+            font-size: 1.25rem;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-secondary;
+    
+            }
+        }
+        .navbar {
+            padding-bottom: 0%;
+            &-toggler-icon{
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+            &-toggler{
+                color: transparent;
+            }
+        }
+    }
+}
+@media (min-width:768px) {
+    header {
+        color: $color-primary;
+        padding-bottom: 1%;
+        border-bottom: 2px solid $color-primary;
+
+        h1 {
+            font-size: 0.8rem;
+            text-align: left;
+            padding-left: 2%;
+        }
+        .logo {
+            max-width: 150px;
+        }
+        nav {
+            .navbar {
+                padding-bottom: 0%;
+            }
+            .collapse {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .font-a {
+                color: $color-primary;
+                font-size: 1rem;
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1200px) {
+    header {
+        color: $color-primary;
+        padding: 0% 8% 1% 8%;
+        border-bottom: 2px solid $color-primary;
+        .logo {
+            max-width: 200px;
+        }
+        h1 {
+            font-size: 1rem;
+            text-align: left;
+            padding-left: 1.8%;
+        }
+        nav {
+            .navbar {
+                padding-bottom: 0%;
+            }
+            .collapse {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .font-a {
+                color: $color-primary;
+                font-size: 1.2rem;
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}

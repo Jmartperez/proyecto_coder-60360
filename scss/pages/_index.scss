@@ -1,0 +1,578 @@
+.nuestros-prod {
+    padding-bottom: 8%;
+    border-bottom: 2px solid $color-primary;
+}
+
+.about {
+    border-bottom: 2px solid $color-primary;
+
+    div {
+        display: flex;
+        padding: 0% 3% 0% 3%;
+        justify-content: space-evenly;
+    }
+
+    img {
+        max-width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+
+    p {
+        width: 60%;
+        color: $color-primary;
+        text-align: center;
+    }
+}
+
+.envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8%;
+    border-bottom: 2px solid $color-primary;
+
+    h2 {
+        color: $color-primary;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        padding: 0% 2% 0% 2%;
+    }
+
+    p {
+        color: $color-primary;
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 2%;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+        background-color: $color-primary;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 4%;
+        border-radius: 5%;
+        align-content: center;
+
+        &:hover {
+            color: $color-primary;
+            background-color: $color-secondary;
+        }
+    }
+
+    .envio-fila {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+}
+
+.contacto {
+    padding-bottom: 8%;
+    border-bottom: 2px solid $color-primary;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    p {
+        color: $color-primary;
+        text-align: center;
+        padding: 1% 3% 1% 3%;
+        margin: 0;
+    }
+
+    h3 {
+        text-align: center;
+        color: $color-primary;
+        font-size: 1.20rem;
+        margin: 0;
+    }
+
+    .contacto1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 5% 3% 5% 3%;
+
+        .img1 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 5% 2% 5%;
+
+            h3 {
+                padding-left: 5%;
+            }
+
+            .what {
+                width: 22%;
+            }
+        }
+
+        .img2 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 5% 2% 5%;
+            width: 100%;
+
+            h3 {
+                font-size: 1.1rem;
+                padding-left: 5%;
+            }
+        }
+
+        .img3 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 5% 2% 5%;
+
+            h3 {
+                font-size: 1.1rem;
+                padding-left: 4%;
+                text-align: left;
+            }
+        }
+    }
+
+    .contacto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+
+        label {
+            color: $color-primary;
+            font-size: 1.20rem;
+            padding: 2%;
+        }
+
+        input {
+            width: 100%;
+            background-color: $color-primary;
+        }
+
+        textarea {
+            width: 100%;
+            background-color: $color-primary;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .nuestros-prod {
+        padding-bottom: 5%;
+        border-bottom: 2px solid $color-primary;
+
+        .carousel {
+            padding: 0% 3% 0% 3%;
+        }
+    }
+
+    .about {
+        border-bottom: 2px solid $color-primary;
+
+        div {
+            display: flex;
+            padding: 0% 3% 5% 3%;
+            justify-content: space-evenly;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 1.25rem;
+            width: 70%;
+            color: $color-primary;
+            text-align: center;
+            margin: 0;
+            align-self: center;
+        }
+    }
+
+    .envio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+        border-bottom: 2px solid $color-primary;
+
+        h2 {
+            color: $color-primary;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            padding: 0% 5% 0% 5%;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: $color-primary;
+            text-align: center;
+            padding: 2% 8% 2% 8%;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+            background-color: $color-primary;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 2%;
+            border-radius: 5%;
+            align-content: center;
+
+            &:hover {
+                color: $color-primary;
+                background-color: $color-secondary;
+            }
+        }
+    }
+
+    .contacto {
+        padding-bottom: 5%;
+        border-bottom: 2px solid $color-primary;
+
+        h2 {
+            text-align: center;
+            padding-bottom: 1%;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: $color-primary;
+            text-align: center;
+            padding: 1% 15% 1% 15%;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            color: $color-primary;
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contacto1 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5% 10% 5% 15%;
+
+            .img1 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 2% 5% 2% 5%;
+
+                h3 {
+                    padding-left: 5%;
+                }
+
+                .what {
+                    width: 15%;
+                }
+            }
+
+            .img2 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 2% 5% 2% 5%;
+
+                img {
+                    width: 15%;
+                }
+
+                h3 {
+                    font-size: 1.6rem;
+                    padding-left: 5%;
+                }
+            }
+
+            .img3 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 2% 5% 2% 5%;
+                width: 100%;
+
+                img {
+                    width: 16%;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    padding-left: 5%;
+                    text-align: start;
+                }
+            }
+        }
+
+        .contacto2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5%;
+
+            label {
+                color: $color-primary;
+                font-size: 1.20rem;
+                padding: 2% 2% 2% 0%;
+            }
+
+            input {
+                width: 66.5%;
+                background-color: $color-primary;
+            }
+
+            textarea {
+                width: 100%;
+                background-color: $color-primary;
+            }
+
+            .label2 input {
+                width: 86%;
+            }
+
+            .label3 input {
+                width: 80.5%;
+            }
+
+            .label4 input {
+                color: $color-secondary;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .nuestros-prod {
+        padding-bottom: 5%;
+        border-bottom: 2px solid $color-primary;
+
+        .carousel {
+            padding: 0% 8% 0% 8%;
+        }
+    }
+
+    .about {
+        border-bottom: 2px solid $color-primary;
+
+        div {
+            display: flex;
+            padding: 0% 3% 5% 3%;
+            justify-content: center;
+        }
+
+        img {
+            width: 25%;
+        }
+
+        p {
+            font-size: 1.8rem;
+            width: 60%;
+            color: $color-primary;
+            text-align: left;
+            margin: 0;
+            align-self: center;
+        }
+    }
+
+    .envio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3%;
+        border-bottom: 2px solid $color-primary;
+
+        p {
+            font-size: 1.7rem;
+            color: $color-primary;
+            text-align: center;
+            padding: 2% 8% 2% 8%;
+            margin: 0;
+        }
+
+        h2 {
+            color: $color-primary;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            padding: 0% 8% 0% 8%;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+            background-color: $color-primary;
+            font-size: 1.7rem;
+            font-weight: bold;
+            padding: 2%;
+            border-radius: 5%;
+            align-content: center;
+
+            &:hover {
+                color: $color-primary;
+                background-color: $color-secondary;
+            }
+
+        }
+
+        .envio-fila {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0% 8% 0% 8%;
+
+            p {
+                width: 68%;
+                padding: 2% 0% 2% 0%;
+                text-align: left;
+            }
+
+            a {
+                height: 100%;
+            }
+        }
+    }
+
+    .contacto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 2%;
+        border-bottom: 2px solid $color-primary;
+
+        h2 {
+            text-align: center;
+            padding-bottom: 1%;
+        }
+
+        p {
+            width: 100%;
+            font-size: 1.7rem;
+            color: $color-primary;
+            text-align: center;
+            padding: 1% 10% 1% 10%;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            color: $color-primary;
+            font-size: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contacto1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            padding: 2% 2% 2% 8%;
+
+            .img1 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 2% 5% 2% 5%;
+
+                h3 {
+                    padding-left: 5%;
+                }
+
+                .what {
+                    width: 15%;
+                }
+            }
+
+            .img2 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 2% 5% 2% 5%;
+
+                h3 {
+                    font-size: 1.6rem;
+                    padding-left: 5%;
+                }
+            }
+
+            .img3 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 2% 5% 2% 5%;
+
+                h3 {
+                    font-size: 1.5rem;
+                    padding-left: 5%;
+                    text-align: start;
+                }
+            }
+        }
+
+        .contacto2 {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 2% 8% 2% 2%;
+
+            label {
+                color: $color-primary;
+                font-size: 1.20rem;
+                padding: 2% 2% 2% 0%;
+            }
+
+            input {
+                background-color: $color-primary;
+            }
+
+            textarea {
+                width: 100%;
+                background-color: $color-primary;
+            }
+
+            .label1 input {
+                width: 64.5%;
+            }
+
+            .label2 input {
+                width: 85.5%;
+            }
+
+            .label3 input {
+                width: 79.5%;
+            }
+
+            .label4 input {
+                color: $color-secondary;
+                width: 50%;
+            }
+        }
+    }
+}

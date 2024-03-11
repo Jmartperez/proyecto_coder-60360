@@ -7,8 +7,6 @@
   background-color: rgb(3, 5, 43);
 }
 
-/* -----------------------------Mobile Responsive a partir de 350px--------------------- */
-/* Propiedades en Header responsive a 350px */
 header {
   color: white;
   padding-bottom: 5%;
@@ -40,7 +38,66 @@ header nav .navbar-toggler {
   color: transparent;
 }
 
-/* -----------------Propiedades generales en Main responsive a 350px-----------------*/
+@media (min-width: 768px) {
+  header {
+    color: white;
+    padding-bottom: 1%;
+    border-bottom: 2px solid white;
+  }
+  header h1 {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 2%;
+  }
+  header .logo {
+    max-width: 150px;
+  }
+  header nav .navbar {
+    padding-bottom: 0%;
+  }
+  header nav .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .font-a {
+    color: white;
+    font-size: 1rem;
+  }
+  header nav .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    color: white;
+    padding: 0% 8% 1% 8%;
+    border-bottom: 2px solid white;
+  }
+  header .logo {
+    max-width: 200px;
+  }
+  header h1 {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1.8%;
+  }
+  header nav .navbar {
+    padding-bottom: 0%;
+  }
+  header nav .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .font-a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  header nav .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
+}
 main h2 {
   padding: 5% 3% 5% 3%;
   color: white;
@@ -48,12 +105,106 @@ main h2 {
   font-size: 1.25rem;
   margin: 0;
 }
-main .nuestros-prod {
+
+@media (min-width: 768px) {
+  main h2 {
+    padding: 3%;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main h2 {
+    padding: 3%;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+footer .sociales {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  gap: 2%;
+}
+footer .sociales a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+footer .insta {
+  width: 20%;
+}
+footer .face {
+  width: 18%;
+}
+footer .logo-foot {
+  width: 100%;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem;
+  }
+  footer .insta {
+    width: 20%;
+  }
+  footer .face {
+    width: 18%;
+  }
+  footer .logo-foot {
+    width: 100%;
+    align-self: center;
+    padding: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 8% 2% 8%;
+  }
+  footer .sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+  }
+  footer .insta {
+    width: 20%;
+  }
+  footer .face {
+    width: 20%;
+    padding-left: 1%;
+  }
+  footer .logo-foot {
+    width: 100%;
+    align-self: center;
+    padding: 5%;
+  }
+}
+.nuestros-prod {
   padding-bottom: 8%;
   border-bottom: 2px solid white;
 }
 
-/* -----------------------Seccion "Sobre Nosotros" responsive a 350px------------------- */
 .about {
   border-bottom: 2px solid white;
 }
@@ -73,7 +224,6 @@ main .nuestros-prod {
   text-align: center;
 }
 
-/* ---------------------Seccion Zonas de envio----------------------------------------------------- */
 .envio {
   display: flex;
   flex-direction: column;
@@ -118,7 +268,6 @@ main .nuestros-prod {
   padding-bottom: 5%;
 }
 
-/* -------------------Seccion Contacto ----------------------------------------------------- */
 .contacto {
   padding-bottom: 8%;
   border-bottom: 2px solid white;
@@ -199,90 +348,26 @@ main .nuestros-prod {
   background-color: white;
 }
 
-/* .............Footer responsive a 350px............... */
-footer .sociales {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 5%;
-  gap: 2%;
-}
-footer .sociales a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-}
-footer .insta {
-  width: 20%;
-}
-footer .face {
-  width: 18%;
-}
-footer .logo-foot {
-  width: 100%;
-  align-self: center;
-}
-
-/* ...................................................................................................... */
-/* ..................Media Query para Header a 768px........ */
 @media (min-width: 768px) {
-  header {
-    color: white;
-    padding-bottom: 1%;
-    border-bottom: 2px solid white;
-  }
-  header h1 {
-    font-size: 0.8rem;
-    text-align: left;
-    padding-left: 2%;
-  }
-  header .logo {
-    max-width: 150px;
-  }
-  header nav .navbar {
-    padding-bottom: 0%;
-  }
-  header nav .collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
-  header nav .font-a {
-    color: white;
-    font-size: 1rem;
-  }
-  header nav .font-a:hover {
-    background-color: white;
-    color: rgb(3, 5, 43);
-  }
-}
-/* ....................Media Query para Main a 768px ........ */
-@media (min-width: 768px) {
-  main h2 {
-    padding: 3%;
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  main .nuestros-prod {
+  .nuestros-prod {
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  main .nuestros-prod .carousel {
+  .nuestros-prod .carousel {
     padding: 0% 3% 0% 3%;
   }
-  main .about {
+  .about {
     border-bottom: 2px solid white;
   }
-  main .about div {
+  .about div {
     display: flex;
     padding: 0% 3% 5% 3%;
     justify-content: space-evenly;
   }
-  main .about img {
+  .about img {
     max-width: 100%;
   }
-  main .about p {
+  .about p {
     font-size: 1.25rem;
     width: 70%;
     color: white;
@@ -290,29 +375,29 @@ footer .logo-foot {
     margin: 0;
     align-self: center;
   }
-  main .envio {
+  .envio {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  main .envio h2 {
+  .envio h2 {
     color: white;
     text-align: center;
   }
-  main .envio img {
+  .envio img {
     width: 100%;
     padding: 0% 5% 0% 5%;
   }
-  main .envio p {
+  .envio p {
     font-size: 1.25rem;
     color: white;
     text-align: center;
     padding: 2% 8% 2% 8%;
     margin: 0;
   }
-  main .envio a {
+  .envio a {
     text-decoration: none;
     color: rgb(3, 5, 43);
     background-color: white;
@@ -322,190 +407,127 @@ footer .logo-foot {
     border-radius: 5%;
     align-content: center;
   }
-  main .envio a:hover {
+  .envio a:hover {
     color: white;
     background-color: rgb(3, 5, 43);
   }
-  main .contacto {
+  .contacto {
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  main .contacto h2 {
+  .contacto h2 {
     text-align: center;
     padding-bottom: 1%;
   }
-  main .contacto p {
+  .contacto p {
     font-size: 1.4rem;
     color: white;
     text-align: center;
     padding: 1% 15% 1% 15%;
     margin: 0;
   }
-  main .contacto h3 {
+  .contacto h3 {
     text-align: center;
     color: white;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
   }
-  main .contacto .contacto1 {
+  .contacto .contacto1 {
     display: flex;
     flex-wrap: wrap;
     padding: 5% 10% 5% 15%;
   }
-  main .contacto .contacto1 .img1 {
+  .contacto .contacto1 .img1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  main .contacto .contacto1 .img1 h3 {
+  .contacto .contacto1 .img1 h3 {
     padding-left: 5%;
   }
-  main .contacto .contacto1 .img1 .what {
+  .contacto .contacto1 .img1 .what {
     width: 15%;
   }
-  main .contacto .contacto1 .img2 {
+  .contacto .contacto1 .img2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  main .contacto .contacto1 .img2 img {
+  .contacto .contacto1 .img2 img {
     width: 15%;
   }
-  main .contacto .contacto1 .img2 h3 {
+  .contacto .contacto1 .img2 h3 {
     font-size: 1.6rem;
     padding-left: 5%;
   }
-  main .contacto .contacto1 .img3 {
+  .contacto .contacto1 .img3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
     width: 100%;
   }
-  main .contacto .contacto1 .img3 img {
+  .contacto .contacto1 .img3 img {
     width: 16%;
   }
-  main .contacto .contacto1 .img3 h3 {
+  .contacto .contacto1 .img3 h3 {
     font-size: 1.5rem;
     padding-left: 5%;
     text-align: start;
   }
-  main .contacto .contacto2 {
+  .contacto .contacto2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 5%;
   }
-  main .contacto .contacto2 label {
+  .contacto .contacto2 label {
     color: white;
     font-size: 1.2rem;
     padding: 2% 2% 2% 0%;
   }
-  main .contacto .contacto2 input {
+  .contacto .contacto2 input {
     width: 66.5%;
     background-color: white;
   }
-  main .contacto .contacto2 textarea {
+  .contacto .contacto2 textarea {
     width: 100%;
     background-color: white;
   }
-  main .contacto .contacto2 .label2 input {
+  .contacto .contacto2 .label2 input {
     width: 86%;
   }
-  main .contacto .contacto2 .label3 input {
+  .contacto .contacto2 .label3 input {
     width: 80.5%;
   }
-  main .contacto .contacto2 .label4 input {
+  .contacto .contacto2 .label4 input {
     color: rgb(3, 5, 43);
     width: 50%;
   }
 }
-/* ..............Media Query para Footer a 768px.................. */
-@media (min-width: 768px) {
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  footer .sociales a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.35rem;
-  }
-  footer .insta {
-    width: 20%;
-  }
-  footer .face {
-    width: 18%;
-  }
-  footer .logo-foot {
-    width: 100%;
-    align-self: center;
-    padding: 5%;
-  }
-}
-/* ..............Media Query para Header a 1200px .....................*/
 @media (min-width: 1200px) {
-  header {
-    color: white;
-    padding: 0% 8% 1% 8%;
-    border-bottom: 2px solid white;
-  }
-  header .logo {
-    max-width: 200px;
-  }
-  header h1 {
-    font-size: 1rem;
-    text-align: left;
-    padding-left: 1.8%;
-  }
-  header nav .navbar {
-    padding-bottom: 0%;
-  }
-  header nav .collapse {
-    display: flex;
-    justify-content: flex-end;
-  }
-  header nav .font-a {
-    color: white;
-    font-size: 1.2rem;
-  }
-  header nav .font-a:hover {
-    background-color: white;
-    color: rgb(3, 5, 43);
-  }
-}
-/* ....................Media Query para Main a 1200px ........ */
-@media (min-width: 1200px) {
-  main h2 {
-    padding: 3%;
-    color: white;
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 0;
-  }
-  main .nuestros-prod {
+  .nuestros-prod {
     padding-bottom: 5%;
     border-bottom: 2px solid white;
   }
-  main .nuestros-prod .carousel {
+  .nuestros-prod .carousel {
     padding: 0% 8% 0% 8%;
   }
-  main .about {
+  .about {
     border-bottom: 2px solid white;
   }
-  main .about div {
+  .about div {
     display: flex;
     padding: 0% 3% 5% 3%;
     justify-content: center;
   }
-  main .about img {
+  .about img {
     width: 25%;
   }
-  main .about p {
+  .about p {
     font-size: 1.8rem;
     width: 60%;
     color: white;
@@ -513,29 +535,29 @@ footer .logo-foot {
     margin: 0;
     align-self: center;
   }
-  main .envio {
+  .envio {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 3%;
     border-bottom: 2px solid white;
   }
-  main .envio p {
+  .envio p {
     font-size: 1.7rem;
     color: white;
     text-align: center;
     padding: 2% 8% 2% 8%;
     margin: 0;
   }
-  main .envio h2 {
+  .envio h2 {
     color: white;
     text-align: center;
   }
-  main .envio img {
+  .envio img {
     width: 100%;
     padding: 0% 8% 0% 8%;
   }
-  main .envio a {
+  .envio a {
     text-decoration: none;
     color: rgb(3, 5, 43);
     background-color: white;
@@ -545,37 +567,37 @@ footer .logo-foot {
     border-radius: 5%;
     align-content: center;
   }
-  main .envio a:hover {
+  .envio a:hover {
     color: white;
     background-color: rgb(3, 5, 43);
   }
-  main .envio .envio-fila {
+  .envio .envio-fila {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0% 8% 0% 8%;
   }
-  main .envio .envio-fila p {
+  .envio .envio-fila p {
     width: 68%;
     padding: 2% 0% 2% 0%;
     text-align: left;
   }
-  main .envio .envio-fila a {
+  .envio .envio-fila a {
     height: 100%;
   }
-  main .contacto {
+  .contacto {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 2%;
     border-bottom: 2px solid white;
   }
-  main .contacto h2 {
+  .contacto h2 {
     text-align: center;
     padding-bottom: 1%;
   }
-  main .contacto p {
+  .contacto p {
     width: 100%;
     font-size: 1.7rem;
     color: white;
@@ -583,115 +605,84 @@ footer .logo-foot {
     padding: 1% 10% 1% 10%;
     margin: 0;
   }
-  main .contacto h3 {
+  .contacto h3 {
     text-align: center;
     color: white;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
   }
-  main .contacto .contacto1 {
+  .contacto .contacto1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
     padding: 2% 2% 2% 8%;
   }
-  main .contacto .contacto1 .img1 {
+  .contacto .contacto1 .img1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  main .contacto .contacto1 .img1 h3 {
+  .contacto .contacto1 .img1 h3 {
     padding-left: 5%;
   }
-  main .contacto .contacto1 .img1 .what {
+  .contacto .contacto1 .img1 .what {
     width: 15%;
   }
-  main .contacto .contacto1 .img2 {
+  .contacto .contacto1 .img2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  main .contacto .contacto1 .img2 h3 {
+  .contacto .contacto1 .img2 h3 {
     font-size: 1.6rem;
     padding-left: 5%;
   }
-  main .contacto .contacto1 .img3 {
+  .contacto .contacto1 .img3 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 2% 5% 2% 5%;
   }
-  main .contacto .contacto1 .img3 h3 {
+  .contacto .contacto1 .img3 h3 {
     font-size: 1.5rem;
     padding-left: 5%;
     text-align: start;
   }
-  main .contacto .contacto2 {
+  .contacto .contacto2 {
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2% 8% 2% 2%;
   }
-  main .contacto .contacto2 label {
+  .contacto .contacto2 label {
     color: white;
     font-size: 1.2rem;
     padding: 2% 2% 2% 0%;
   }
-  main .contacto .contacto2 input {
+  .contacto .contacto2 input {
     background-color: white;
   }
-  main .contacto .contacto2 textarea {
+  .contacto .contacto2 textarea {
     width: 100%;
     background-color: white;
   }
-  main .contacto .contacto2 .label1 input {
+  .contacto .contacto2 .label1 input {
     width: 64.5%;
   }
-  main .contacto .contacto2 .label2 input {
+  .contacto .contacto2 .label2 input {
     width: 85.5%;
   }
-  main .contacto .contacto2 .label3 input {
+  .contacto .contacto2 .label3 input {
     width: 79.5%;
   }
-  main .contacto .contacto2 .label4 input {
+  .contacto .contacto2 .label4 input {
     color: rgb(3, 5, 43);
     width: 50%;
-  }
-}
-/* ..............Media Query para Footer a 1200px.................. */
-@media (min-width: 1200px) {
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2% 8% 2% 8%;
-  }
-  footer .sociales {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  footer .sociales a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.7rem;
-  }
-  footer .insta {
-    width: 20%;
-  }
-  footer .face {
-    width: 20%;
-    padding-left: 1%;
-  }
-  footer .logo-foot {
-    width: 100%;
-    align-self: center;
-    padding: 5%;
   }
 }
 
