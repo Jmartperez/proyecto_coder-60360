@@ -1,20 +1,24 @@
+$color-primary: white;
+$color-secondary: rgb(3, 5, 43);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    background-color: rgb(3, 5, 43);
+    background-color:$color-secondary;
 }
+
 
 /* -----------------------------Mobile Responsive a partir de 350px--------------------- */
 
 /* Propiedades en Header responsive a 350px */
 
 header {
-    color: rgb(255, 255, 255);
+    color: $color-primary;
     padding-bottom: 5%;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $color-primary;
 
     h1 {
         font-size: 0.8rem;
@@ -28,27 +32,23 @@ header {
 
     nav {
         .font-a {
-            color: white;
+            color: $color-primary;
             font-size: 1.25rem;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-secondary;
+    
+            }
         }
-
-        .font-a:hover {
-            background-color: white;
-            color: rgb(3, 5, 43)
-        }
-
         .navbar {
             padding-bottom: 0%;
+            &-toggler-icon{
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            }
+            &-toggler{
+                color: transparent;
+            }
         }
-
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-
-        .navbar-toggler {
-            color: transparent;
-        }
-
     }
 }
 
@@ -56,7 +56,7 @@ header {
 main {
     h2 {
         padding: 5% 3% 5% 3%;
-        color: white;
+        color: $color-primary;
         text-align: center;
         font-size: 1.25rem;
         margin: 0;
@@ -64,7 +64,7 @@ main {
 
     .nuestros-prod {
         padding-bottom: 8%;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $color-primary;
 
     }
 }
@@ -73,7 +73,7 @@ main {
 
 
 .about {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $color-primary;
 
     div {
         display: flex;
@@ -89,7 +89,7 @@ main {
 
     p {
         width: 60%;
-        color: white;
+        color: $color-primary;
         text-align: center;
     }
 
@@ -101,10 +101,10 @@ main {
     flex-direction: column;
     align-items: center;
     padding-bottom: 8%;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid $color-primary;
 
     h2 {
-        color: white;
+        color: $color-primary;
         text-align: center;
     }
 
@@ -114,7 +114,7 @@ main {
     }
 
     p {
-        color: white;
+        color: $color-primary;
         font-size: 1.25rem;
         text-align: center;
         padding: 2%;
@@ -123,19 +123,19 @@ main {
 
     a {
         text-decoration: none;
-        color: rgb(3, 5, 43);
-        background-color: white;
+        color: $color-secondary;
+        background-color: $color-primary;
         font-size: 1.25rem;
         font-weight: bold;
         padding: 4%;
         border-radius: 5%;
         align-content: center;
+        &:hover {
+            color: $color-primary;
+            background-color: $color-secondary;
+        }
     }
 
-    a:hover {
-        color: white;
-        background-color: rgb(3, 5, 43);
-    }
 
     .envio-fila {
         display: flex;
@@ -150,73 +150,63 @@ main {
 
 .contacto {
     padding-bottom: 8%;
-    border-bottom: 2px solid white;
-
+    border-bottom: 2px solid $color-primary;
     h2 {
         text-align: center;
         padding-bottom: 1%;
     }
-
     p {
-        color: white;
+        color: $color-primary;
         text-align: center;
         padding: 1% 3% 1% 3%;
         margin: 0;
     }
-
     h3 {
         text-align: center;
-        color: white;
+        color: $color-primary;
         font-size: 1.20rem;
         margin: 0;
     }
-
     .contacto1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: 5% 3% 5% 3%;
-    }
-
-    .img1 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-
-    .img1 h3 {
-        padding-left: 5%;
-    }
-
-    .what {
-        width: 22%;
-    }
-
-    .img2 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-        width: 100%;
-    }
-
-    .img2 h3 {
-        font-size: 1.1rem;
-        padding-left: 5%;
-    }
-
-    .img3 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2% 5% 2% 5%;
-    }
-
-    .img3 h3 {
-        font-size: 1.1rem;
-        padding-left: 4%;
-        text-align: left;
+        .img1 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 5% 2% 5%;
+            h3 {
+                padding-left: 5%;
+            }
+            .what {
+                width: 22%;
+            }
+        }
+        .img2 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 5% 2% 5%;
+            width: 100%;
+            h3 {
+                font-size: 1.1rem;
+                padding-left: 5%;
+            }
+        }
+        .img3 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2% 5% 2% 5%;
+            h3 {
+                font-size: 1.1rem;
+                padding-left: 4%;
+                text-align: left;
+            }
+        }
+    
     }
 
     .contacto2 {
@@ -224,24 +214,20 @@ main {
         flex-direction: column;
         justify-content: center;
         padding: 5%;
+        label {
+            color: $color-primary;
+            font-size: 1.20rem;
+            padding: 2%;
+        }
+        input {
+            width: 100%;
+            background-color: $color-primary;
+        }
+        textarea {
+            width: 100%;
+            background-color: $color-primary;
+        }
     }
-
-    .contacto2 label {
-        color: white;
-        font-size: 1.20rem;
-        padding: 2%;
-    }
-
-    input {
-        width: 100%;
-        background-color: white;
-    }
-
-    textarea {
-        width: 100%;
-        background-color: white;
-    }
-
 }
 
 /* .............Footer responsive a 350px............... */
@@ -252,14 +238,12 @@ footer {
         justify-content: space-around;
         padding: 5%;
         gap: 2%;
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-size: 1rem;
+        }
     }
-
-    .sociales a {
-        text-decoration: none;
-        color: white;
-        font-size: 1rem;
-    }
-
     .insta {
         width: 20%;
     }
@@ -281,9 +265,9 @@ footer {
 /* ..................Media Query para Header a 768px........ */
 @media (min-width:768px) {
     header {
-        color: white;
+        color: $color-primary;
         padding-bottom: 1%;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $color-primary;
 
         h1 {
             font-size: 0.8rem;
@@ -307,13 +291,12 @@ footer {
             }
 
             .font-a {
-                color: white;
+                color: $color-primary;
                 font-size: 1rem;
-            }
-
-            .font-a:hover {
-                background-color: white;
-                color: rgb(3, 5, 43)
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                }
             }
         }
     }
@@ -324,20 +307,20 @@ footer {
     main{
         h2 {
             padding: 3%;
-            color: white;
+            color: $color-primary;
             text-align: center;
             font-size: 1.5rem;
             margin: 0;
         }
         .nuestros-prod {
             padding-bottom: 5%;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
             .carousel {
                 padding: 0% 3% 0% 3%;
             }
         }
         .about {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
             div {
                 display: flex;
                 padding: 0% 3% 5% 3%;
@@ -349,7 +332,7 @@ footer {
             p {
                 font-size: 1.25rem;
                 width: 70%;
-                color: white;
+                color: $color-primary;
                 text-align: center;
                 margin: 0;
                 align-self: center;
@@ -360,9 +343,9 @@ footer {
             flex-direction: column;
             align-items: center;
             padding-bottom: 5%;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
             h2 {
-                color: white;
+                color: $color-primary;
                 text-align: center;
             }
             img {
@@ -371,43 +354,43 @@ footer {
             }
             p {
                 font-size: 1.25rem;
-                color: white;
+                color: $color-primary;
                 text-align: center;
                 padding: 2% 8% 2% 8%;
                 margin: 0;
             }
             a {
                 text-decoration: none;
-                color: rgb(3, 5, 43);
-                background-color: white;
+                color: $color-secondary;
+                background-color: $color-primary;
                 font-size: 1.25rem;
                 font-weight: bold;
                 padding: 2%;
                 border-radius: 5%;
                 align-content: center;
-            }
-            a:hover {
-                color: white;
-                background-color: rgb(3, 5, 43);
+                &:hover {
+                    color: $color-primary;
+                    background-color: $color-secondary;
+                }
             }
         }
         .contacto {
             padding-bottom: 5%;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
             h2 {
                 text-align: center;
                 padding-bottom: 1%;
             }
             p {
                 font-size: 1.4rem;
-                color: white;
+                color: $color-primary;
                 text-align: center;
                 padding: 1% 15% 1% 15%;
                 margin: 0;
             }
             h3 {
                 text-align: center;
-                color: white;
+                color: $color-primary;
                 font-size: 1.5rem;
                 margin: 0;
                 padding: 0;
@@ -424,9 +407,9 @@ footer {
                     h3 {
                         padding-left: 5%;
                     }
-                }
-                .what {
-                    width: 15%;
+                    .what {
+                        width: 15%;
+                    }
                 }
                 .img2 {
                     display: flex;
@@ -463,17 +446,17 @@ footer {
                 justify-content: center;
                 padding: 5%;
                 label {
-                    color: white;
+                    color: $color-primary;
                     font-size: 1.20rem;
                     padding: 2% 2% 2% 0%;
                 }
                 input {
                     width: 66.5%;
-                    background-color: white;
+                    background-color: $color-primary;
                 }
                 textarea {
                     width: 100%;
-                    background-color: white;
+                    background-color: $color-primary;
                 }
                 .label2 input {
                     width: 86%;
@@ -482,7 +465,7 @@ footer {
                     width: 80.5%;
                 }
                 .label4 input {
-                    color: rgb(3, 5, 43);
+                    color: $color-secondary;
                     width: 50%;
                 }
             }
@@ -498,7 +481,7 @@ footer {
         justify-content: space-around;
         .sociales a {
             text-decoration: none;
-            color: white;
+            color: $color-primary;
             font-size: 1.35rem;
         }
         .insta {
@@ -518,9 +501,9 @@ footer {
 /* ..............Media Query para Header a 1200px .....................*/
 @media (min-width:1200px) {
     header {
-        color: white;
+        color: $color-primary;
         padding: 0% 8% 1% 8%;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $color-primary;
 
         .logo {
             max-width: 200px;
@@ -543,13 +526,12 @@ footer {
             }
 
             .font-a {
-                color: white;
+                color: $color-primary;
                 font-size: 1.2rem;
-            }
-
-            .font-a:hover {
-                background-color: white;
-                color: rgb(3, 5, 43)
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                }
             }
         }
     }
@@ -560,21 +542,21 @@ footer {
     main{
         h2 {
             padding: 3%;
-            color: white;
+            color: $color-primary;
             text-align: center;
             font-size: 1.8rem;
             margin: 0;
         }
         .nuestros-prod {
             padding-bottom: 5%;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
     
             .carousel {
                 padding: 0% 8% 0% 8%;
             }
         }
         .about {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
     
             div {
                 display: flex;
@@ -589,7 +571,7 @@ footer {
             p {
                 font-size: 1.8rem;
                 width: 60%;
-                color: white;
+                color: $color-primary;
                 text-align: left;
                 margin: 0;
                 align-self: center;
@@ -600,18 +582,18 @@ footer {
             flex-direction: column;
             align-items: center;
             padding-bottom: 3%;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
     
             p {
                 font-size: 1.7rem;
-                color: white;
+                color: $color-primary;
                 text-align: center;
                 padding: 2% 8% 2% 8%;
                 margin: 0;
             }
     
             h2 {
-                color: white;
+                color: $color-primary;
                 text-align: center;
             }
     
@@ -622,20 +604,19 @@ footer {
     
             a {
                 text-decoration: none;
-                color: rgb(3, 5, 43);
-                background-color: white;
+                color: $color-secondary;
+                background-color: $color-primary;
                 font-size: 1.7rem;
                 font-weight: bold;
                 padding: 2%;
                 border-radius: 5%;
                 align-content: center;
+                &:hover {
+                    color: $color-primary;
+                    background-color: $color-secondary;
+                }
+        
             }
-    
-            a:hover {
-                color: white;
-                background-color: rgb(3, 5, 43);
-            }
-    
             .envio-fila {
                 display: flex;
                 flex-wrap: wrap;
@@ -659,7 +640,7 @@ footer {
             flex-wrap: wrap;
             justify-content: space-evenly;
             padding-bottom: 2%;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $color-primary;
     
             h2 {
                 text-align: center;
@@ -669,7 +650,7 @@ footer {
             p {
                 width: 100%;
                 font-size: 1.7rem;
-                color: white;
+                color: $color-primary;
                 text-align: center;
                 padding: 1% 10% 1% 10%;
                 margin: 0;
@@ -677,7 +658,7 @@ footer {
     
             h3 {
                 text-align: center;
-                color: white;
+                color: $color-primary;
                 font-size: 1.5rem;
                 margin: 0;
                 padding: 0;
@@ -739,18 +720,18 @@ footer {
                 padding: 2% 8% 2% 2%;
     
                 label {
-                    color: white;
+                    color: $color-primary;
                     font-size: 1.20rem;
                     padding: 2% 2% 2% 0%;
                 }
     
                 input {
-                    background-color: white;
+                    background-color: $color-primary;
                 }
     
                 textarea {
                     width: 100%;
-                    background-color: white;
+                    background-color: $color-primary;
                 }
     
                 .label1 input {
@@ -766,7 +747,7 @@ footer {
                 }
     
                 .label4 input {
-                    color: rgb(3, 5, 43);
+                    color: $color-secondary;
                     width: 50%;
                 }
             }
@@ -787,7 +768,7 @@ footer {
             justify-content: flex-start;
             a {
                 text-decoration: none;
-                color: white;
+                color: $color-primary;
                 font-size: 1.7rem;
             }
         }

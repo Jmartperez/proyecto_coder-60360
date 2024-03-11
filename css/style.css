@@ -10,7 +10,7 @@
 /* -----------------------------Mobile Responsive a partir de 350px--------------------- */
 /* Propiedades en Header responsive a 350px */
 header {
-  color: rgb(255, 255, 255);
+  color: white;
   padding-bottom: 5%;
   border-bottom: 2px solid white;
 }
@@ -145,36 +145,36 @@ main .nuestros-prod {
   justify-content: flex-start;
   padding: 5% 3% 5% 3%;
 }
-.contacto .img1 {
+.contacto .contacto1 .img1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 2% 5% 2% 5%;
 }
-.contacto .img1 h3 {
+.contacto .contacto1 .img1 h3 {
   padding-left: 5%;
 }
-.contacto .what {
+.contacto .contacto1 .img1 .what {
   width: 22%;
 }
-.contacto .img2 {
+.contacto .contacto1 .img2 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 2% 5% 2% 5%;
   width: 100%;
 }
-.contacto .img2 h3 {
+.contacto .contacto1 .img2 h3 {
   font-size: 1.1rem;
   padding-left: 5%;
 }
-.contacto .img3 {
+.contacto .contacto1 .img3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 2% 5% 2% 5%;
 }
-.contacto .img3 h3 {
+.contacto .contacto1 .img3 h3 {
   font-size: 1.1rem;
   padding-left: 4%;
   text-align: left;
@@ -190,11 +190,11 @@ main .nuestros-prod {
   font-size: 1.2rem;
   padding: 2%;
 }
-.contacto input {
+.contacto .contacto2 input {
   width: 100%;
   background-color: white;
 }
-.contacto textarea {
+.contacto .contacto2 textarea {
   width: 100%;
   background-color: white;
 }
@@ -362,7 +362,7 @@ footer .logo-foot {
   main .contacto .contacto1 .img1 h3 {
     padding-left: 5%;
   }
-  main .contacto .contacto1 .what {
+  main .contacto .contacto1 .img1 .what {
     width: 15%;
   }
   main .contacto .contacto1 .img2 {
