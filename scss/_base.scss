@@ -7,7 +7,7 @@ $color-secondary: rgb(3, 5, 43);
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    background-color: $color-secondary;
+    background-color:$color-secondary;
 }
 //propiedades generales de Header
 header {
@@ -69,8 +69,11 @@ header {
                 color: $color-primary;
                 font-size: 1rem;
                 &:hover {
+                    transform: scale(1.1);
+                    transition-duration: 0.5s;
                     background-color: $color-primary;
                     color: $color-secondary;
+                    border-radius: 5%;
                 }
             }
         }
@@ -101,6 +104,8 @@ header {
                 color: $color-primary;
                 font-size: 1.2rem;
                 &:hover {
+                    transform: scale(1.1);
+                    transition-duration: 0.5s;
                     background-color: $color-primary;
                     color: $color-secondary;
                 }

@@ -64,8 +64,11 @@ header nav .navbar-toggler {
     font-size: 1rem;
   }
   header nav .font-a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
     background-color: white;
     color: rgb(3, 5, 43);
+    border-radius: 5%;
   }
 }
 @media (min-width: 1200px) {
@@ -94,6 +97,8 @@ header nav .navbar-toggler {
     font-size: 1.2rem;
   }
   header nav .font-a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
     background-color: white;
     color: rgb(3, 5, 43);
   }
@@ -257,8 +262,9 @@ footer .logo-foot {
   align-content: center;
 }
 .envio a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
   color: white;
-  background-color: rgb(3, 5, 43);
 }
 .envio .envio-fila {
   display: flex;
@@ -683,6 +689,173 @@ footer .logo-foot {
   .contacto .contacto2 .label4 input {
     color: rgb(3, 5, 43);
     width: 50%;
+  }
+}
+header {
+  color: white;
+  padding-bottom: 5%;
+  border-bottom: 2px solid white;
+}
+header h1 {
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 5%;
+}
+header .logo {
+  max-width: 150px;
+}
+header nav .font-a {
+  color: white;
+  font-size: 1.25rem;
+}
+header nav .font-a:hover {
+  background-color: white;
+  color: rgb(3, 5, 43);
+}
+header nav .navbar {
+  padding-bottom: 0%;
+}
+header nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header nav .navbar-toggler {
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  header {
+    color: white;
+    padding-bottom: 1%;
+    border-bottom: 2px solid white;
+  }
+  header h1 {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 2%;
+  }
+  header .logo {
+    max-width: 150px;
+  }
+  header nav .navbar {
+    padding-bottom: 0%;
+  }
+  header nav .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .font-a {
+    color: white;
+    font-size: 1rem;
+  }
+  header nav .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    color: white;
+    padding: 0% 8% 1% 8%;
+    border-bottom: 2px solid white;
+  }
+  header .logo {
+    max-width: 200px;
+  }
+  header h1 {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1.8%;
+  }
+  header nav .navbar {
+    padding-bottom: 0%;
+  }
+  header nav .collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header nav .font-a {
+    color: white;
+    font-size: 1.2rem;
+  }
+  header nav .font-a:hover {
+    background-color: white;
+    color: rgb(3, 5, 43);
+  }
+}
+footer .sociales {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  gap: 2%;
+}
+footer .sociales a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+footer .insta {
+  width: 20%;
+}
+footer .face {
+  width: 18%;
+}
+footer .logo-foot {
+  width: 100%;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem;
+  }
+  footer .insta {
+    width: 20%;
+  }
+  footer .face {
+    width: 18%;
+  }
+  footer .logo-foot {
+    width: 100%;
+    align-self: center;
+    padding: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 8% 2% 8%;
+  }
+  footer .sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  footer .sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+  }
+  footer .insta {
+    width: 20%;
+  }
+  footer .face {
+    width: 20%;
+    padding-left: 1%;
+  }
+  footer .logo-foot {
+    width: 100%;
+    align-self: center;
+    padding: 5%;
   }
 }
 
