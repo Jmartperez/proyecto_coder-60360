@@ -724,6 +724,130 @@ footer .logo-foot {
     text-align: center;
   }
 }
+.prod-tarj {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.prod-tarj article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 75%;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+.prod-tarj article img {
+  width: 75%;
+  padding-bottom: 5%;
+}
+.prod-tarj article p {
+  color: white;
+}
+.prod-tarj article a {
+  text-decoration: none;
+  color: rgb(3, 5, 43);
+  background-color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 4%;
+  border-radius: 5%;
+  align-content: center;
+}
+.prod-tarj article a:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  color: white;
+  background-color: rgb(3, 5, 43);
+}
+
+@media (min-width: 768px) {
+  .prod-tarj {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5%;
+  }
+  .prod-tarj article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 5%;
+    margin: 2%;
+    width: 45%;
+  }
+  .prod-tarj article img {
+    width: 78%;
+    padding-bottom: 5%;
+  }
+  .prod-tarj article p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .prod-tarj article a {
+    text-decoration: none;
+    color: rgb(3, 5, 43);
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 4%;
+    border-radius: 5%;
+    align-content: center;
+  }
+  .prod-tarj article a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    color: white;
+    background-color: rgb(3, 5, 43);
+  }
+}
+@media (min-width: 1200px) {
+  .prod-tarj {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+  }
+  .prod-tarj article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid white;
+    padding: 2%;
+    margin: 2%;
+    width: 25%;
+  }
+  .prod-tarj article img {
+    width: 78%;
+    padding-bottom: 5%;
+  }
+  .prod-tarj article p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .prod-tarj article a {
+    text-decoration: none;
+    color: rgb(3, 5, 43);
+    background-color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 4%;
+    border-radius: 5%;
+    align-content: center;
+  }
+  .prod-tarj article a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    color: white;
+    background-color: rgb(3, 5, 43);
+  }
+}
 header {
   color: white;
   padding-bottom: 5%;
