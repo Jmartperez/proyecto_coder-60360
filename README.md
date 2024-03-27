@@ -10,3 +10,4 @@
 - La información que constituye la pagina fue obtenida desde el cliente que recibirá de mutuo acuerdo la página ad honorem a modo de práctica para mí, con la condición de promocionar mi trabajo al finalizar la entrega;
 - La mayor dificultad encontrada fue el manejo de Bootstrap en la que tuve que recurrir a fuentes de tutoriales en youtube, pero que han logrado brindarme un soporte complementario para encontrar soluciones e ideas que incluí finalmente;
 - Sigue siendo un desafio divertido que me motiva a seguir aprendiendo y me ha brindado una nueva herramienta para desarrollarme profesionalmente.
+- He encontrado en este proyecto un trabajo completo y que a la vez me da el punto de partida para mejorar en proyectos futuros.
