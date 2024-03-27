@@ -692,6 +692,38 @@ footer .logo-foot {
     width: 50%;
   }
 }
+.about-opin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-opin p {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .about-opin {
+    display: flex;
+    align-items: center;
+  }
+  .about-opin p {
+    width: 40%;
+    padding-bottom: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  .about-opin {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5%;
+    align-items: center;
+  }
+  .about-opin p {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+  }
+}
 header {
   color: white;
   padding-bottom: 5%;
